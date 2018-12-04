@@ -1,6 +1,20 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'paghes#home'
+  root to: 'pages#home'
+
+  #add in OffersController a before_action: authenticate_user! only: [:new, :edit, :create, :update]
+  resources :offers
+
+  #add in BookingsController a before_action: authenticate_user!
+  resources :offers, only: [] do
+    resources :bookings, only: [:create, :destroy]
+  end
+
+  resources :bookings, only: [:index, :show] do
+    resources :reviews, only: [:new, :create, :edit, :update]
+  end
+end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   # #http//localhost3000/user/user_id/offers/index
@@ -23,19 +37,3 @@ Rails.application.routes.draw do
 
   # #http//localhost3000/user/user_id/offer/offer_id/update
   # delete 'user/user_id/offers/offers_id' to: 'offers#destroy'
-
-
-
-  #add in OffersController a before_action: authenticate_user! only: [:new, :edit, :create, :update]
-  resources :offers
-
-  #add in BookingsController a before_action: authenticate_user!
-  resources :offers, only: [] do
-    resources :bookings, only: [:create]
-  end
-
-  resources :bookings, only: [:index, :show, :destroy] do
-    resources :reviews, only: [:new, :create]
-  end
-end
-
