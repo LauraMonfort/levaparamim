@@ -1,6 +1,6 @@
 class RequestsController < ApplicationController
 
-skip_before_action :authenticate_user!, only: :home
+# skip_before_action :authenticate_user!, only: :home
 
 SIZE = "<option disabled selected>Size of your item</option><option>Fits in a pocket<option>Fits in a bag<option>Fits in a car<option>Fits in a big car<option>Fits in a van"
 

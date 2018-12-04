@@ -12,37 +12,37 @@ users_attributes = [
   {
     email: 'flavio123@gmail.com',
     password: '123456',
-    username: 'Flavio'
+    # username: 'Flavio'
 
   },
   {
     email: 'rodrigo123@gmail.com',
     password: '123456',
-    username: 'Rodrigo123'
+    # username: 'Rodrigo123'
 
   },
   {
     email: 'ricardo@gmail.com',
     password: '123456',
-    username: 'Ricardo'
+    # username: 'Ricardo'
 
   },
   {
     email: 'flavia@msn.com',
     password: '123456',
-    username: 'Flavia'
+    # username: 'Flavia'
 
   },
   {
     email: 'olivia@sfr.com',
     password: '123456',
-    username: 'Olivia-Linda'
+    # username: 'Olivia-Linda'
 
   },
   {
     email: 'Alexia@aol.com',
     password: '123456',
-    username: 'Alexia'
+    # username: 'Alexia'
 
   }
 ]
@@ -141,34 +141,34 @@ Request.create!(requests_attributes)
 
 reviews_attributes = [
   {
-    comment: 'super willing to help, and the delivery went completely fine. I recommend.',
+    content: 'super willing to help, and the delivery went completely fine. I recommend.',
     rating: 5,
-    user: users.sample
+    # user: users.sample
   },
   {
-    comment: 'Super easy to reach and meet.',
+    content: 'Super easy to reach and meet.',
     rating: 5,
-    user: users.sample
+    # user: users.sample
   },
   {
-    comment: 'Nice guy. I recommend.',
+    content: 'Nice guy. I recommend.',
     rating: 4,
-    user: users.sample
+    # user: users.sample
   },
   {
-    comment: 'Despite some difficulties to meet, everything was ok.',
+    content: 'Despite some difficulties to meet, everything was ok.',
     rating: 5,
-    user: users.sample
+    # user: users.sample
   },
   {
-    comment: 'Available and charming. I recommend.',
+    content: 'Available and charming. I recommend.',
     rating: 3,
-    user: users.sample
+    # user: users.sample
   },
   {
-    comment: 'Do not recommend. Could not reach him on the phone',
+    content: 'Do not recommend. Could not reach him on the phone',
     rating: 2,
-    user: users.sample
+    # user: users.sample
   }
 ]
 Review.create!(reviews_attributes)
