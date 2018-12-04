@@ -1,10 +1,20 @@
 .home-banner {
-  background-image: url('image.jpg');
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('image.jpg');
   background-size: cover;
   height: 100vh;
   color: #eee;
   text-align: center;
   padding-top: 40vh;
+  //   &:before {
+  // content: '';
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+  // opacity: .6;
+  // }
 
 }
 
@@ -12,6 +22,18 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 60px;
   text-shadow: 1px 1px 5px black;
-  padding-top: 70px;
+  padding-top: 40px;
+  font-weight: 500;
 }
 
+#subtitle {
+  font-family: 'Monserrat', sans-serif;
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 7px;
+  font-size: 23px;
+  font-weight:300px;
+}
+
+.button {
+  padding: 25px;
+}
