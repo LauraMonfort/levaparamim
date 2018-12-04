@@ -1,0 +1,17 @@
+<%= form_for(@request) do |f| %>
+  <%= f.label :origin %>
+  <%= f.text_field :origin %>
+  <%= f.label :destination %>
+  <%= f.text_field :destination %>
+  <%= f.label :size %>
+  <%= f.text_field :size %>
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+  <%= f.label :comment %>
+  <%= f.text_field :comment %>
+  <%= f.label :delivery_date_time %>
+  <%= f.text_field :delivery_date %>
+  <%= f.label :comment %>
+  <%= f.text_field :comment %>
+  <%= f.submit %>
+<% end %>
