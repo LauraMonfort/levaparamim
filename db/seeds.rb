@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # User's seeding
-
+puts 'Creating Users...'
 users_attributes = [
   {
     email: 'flavio123@gmail.com',
@@ -48,9 +48,10 @@ users_attributes = [
 ]
 User.create!(users_attributes)
 users = User.all
-
+puts 'Finished user!'
 # Request's seeding
 
+puts 'Creating requests...'
 requests_attributes = [
   {
     delivery_date_time: '05/12/2018',
@@ -136,9 +137,10 @@ requests_attributes = [
 ]
 
 Request.create!(requests_attributes)
-
+puts 'Finished requests!'
 # Review's seeding
 
+puts 'Creating reviews...'
 reviews_attributes = [
   {
     content: 'super willing to help, and the delivery went completely fine. I recommend.',
@@ -172,4 +174,4 @@ reviews_attributes = [
   }
 ]
 Review.create!(reviews_attributes)
-puts 'Finished review!'
+puts 'Finished reviews!'
