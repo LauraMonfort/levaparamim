@@ -1,6 +1,6 @@
 class MessengerController < Messenger::MessengerController
   def webhook
     #logic here
-    head :ok
+    binding.pry
   end
 end
