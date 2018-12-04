@@ -1,0 +1,16 @@
+ <%= form_tag offers_path, method: :get do %>
+
+ <%= date_field_tag :query_delivery_date, "", :required => false, class: "form-control",
+ placeholder: "What date do you need your item to be delivered?"
+ %>
+
+ <%= text_field_tag :query_origin, params[:query_origin], :required => true, class: "form-control",
+ placeholder: "What city is your item located?"
+ %>
+
+ <%= text_field_tag :query_destination, params[:query_destination], :required => true, class: "form-control", placeholder: "What is the destination city?"
+ %>
+
+ <%= submit_tag "Find offers", class: "btn btn-primary" %>
+
+<%= end %>
