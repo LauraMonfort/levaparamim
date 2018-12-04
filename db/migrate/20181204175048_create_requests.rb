@@ -1,6 +1,6 @@
-class CreateOffers < ActiveRecord::Migration[5.2]
+class CreateRequests < ActiveRecord::Migration[5.2]
   def change
-    create_table :offers do |t|
+    create_table :requests do |t|
       t.datetime :delivery_date_time
       t.string :origin
       t.string :destination
