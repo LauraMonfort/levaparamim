@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
   end
 
   def create
-  @review = Offer.new(review_params)
+  @review = Request.new(review_params)
   @review.user = current_user
   if @review.save
     redirect_to user_review_path(current_user, @review)
