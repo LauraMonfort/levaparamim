@@ -16,6 +16,10 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
+# gem for Messenger bot
+gem 'facebook-messenger'
+gem 'dotenv'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
