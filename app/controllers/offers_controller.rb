@@ -1,8 +1,6 @@
 class OffersController < ApplicationController
-
-skip_before_action :authenticate_user!, only: :home
-
-def index
+  skip_before_action :authenticate_user!, only: [:home, :index, :show]
+  def index
     @offers = Offer.all
     @offers = @offers.where(size: params[:query_size]) if params[:query_size].present?
     @offers = @offers.search_by_origin(params[:query_origin]) if params[:query_origin].present?
