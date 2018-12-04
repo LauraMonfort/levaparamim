@@ -5,7 +5,7 @@ class Request < ApplicationRecord
   validates :origin, presence: true
   validates :destination, presence: true
   validates :size, presence: true
-  validates :image, presence: true
+  # validates :image, presence: true
   validates :price, presence: true
   validates :comment, presence: true
 end
