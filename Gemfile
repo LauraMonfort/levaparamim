@@ -3,7 +3,7 @@ ruby '2.4.4'
 
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
-gem 'pg', '~> 0.21'
+
 gem 'puma'
 gem 'rails', '5.2.1'
 gem 'redis'
@@ -34,4 +34,9 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
+end
+
+#For Messenger bot Gem pg have to be under production and bundle install need to be without production "bundle install --without production"
+group :production do
+  gem 'pg', '~> 0.21'
 end
