@@ -17,6 +17,10 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'devise'
 
+#Gem for Messenger bot
+gem 'facebook-messenger'
+
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
