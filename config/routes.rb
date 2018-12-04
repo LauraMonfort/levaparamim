@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   #add in OffersController a before_action: authenticate_user! only: [:new, :edit, :create, :update]
-  resources :offers
+  resources :requests
 
   #add in BookingsController a before_action: authenticate_user!
-  resources :offers, only: [] do
+  resources :requests, only: [] do
     resources :bookings, only: [:create, :destroy]
   end
 

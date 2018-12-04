@@ -5,9 +5,9 @@ class BookingsController < ApplicationController
   end
 
   def create
-    @offer = Offer.find(params[:offer_id])
+    @request = Request.find(params[:request_id])
     @booking = Booking.new
-    @booking.offer = @offer
+    @booking.request = @request
     @booking.user = User.first
     @booking.save!
       # if current_user
