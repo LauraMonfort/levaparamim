@@ -5,6 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'destrying old models'
+User.destroy_all
+Request.destroy_all
+Review.destroy_all
 
 # User's seeding
 puts 'Creating Users...'
@@ -60,7 +64,8 @@ requests_attributes = [
     size: 'Fits in a bag',
     price: '20',
     comment: "Have an important document to be delivered in Rio by tomorrow. Anybody up for it?",
-    user: users.sample
+    user: users.sample,
+    #remote_image_url: "http://static.giantbomb.com/uploads/original/9/99864/2419866-nes_console_set.png"
   },
   {
     delivery_date_time: '06/12/2018',
