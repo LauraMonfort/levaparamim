@@ -1,13 +1,10 @@
 class RequestsController < ApplicationController
 
-SIZE = "<option disabled selected>Size of your item</option><option>Fits in a pocket<option>Fits in a bag<option>Fits in a car<option>Fits in a big car<option>Fits in a van"
-
 def index
     @requests = Request.all
-    @requests = @requests.where(size: params[:query_size]) if params[:query_size].present?
     @requests = @requests.search_by_origin(params[:query_origin]) if params[:query_origin].present?
     @requests = @requests.search_by_destination(params[:query_destination]) if params[:query_destination].present?
-    @requests = @requests.where(delivery_date_time: params[:query_delivery_date_time]) if params[:query_delivery_date_time].present?
+    @requests = @requests.where(delivery_date: params[:query_delivery_date]) if params[:query_delivery_date].present?
   end
 
   def home
@@ -52,7 +49,7 @@ def index
   private
 
   def request_params
-    params.require(:request).permit(:delivery_date_time, :origin, :destination, :size, :price, :comment)
+    params.require(:request).permit(:delivery_date, :origin, :destination, :size, :price, :comment)
   end
 
 
