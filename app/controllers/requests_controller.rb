@@ -49,7 +49,7 @@ def index
   private
 
   def request_params
-    params.require(:request).permit(:delivery_date, :origin, :destination, :size, :price, :comment)
+    params.require(:request).permit(:delivery_date, :origin, :destination, :size, :price, :comment, :booked)
   end
 
 

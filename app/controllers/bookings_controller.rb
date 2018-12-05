@@ -1,7 +1,8 @@
 class BookingsController < ApplicationController
 
   def index
-    @booking = Booking.where(pa)
+    @booking = Booking.all
+    @booking_sender = @booking.offer.user(:id)
   end
 
   def show
