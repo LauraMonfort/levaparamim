@@ -35,11 +35,8 @@ ActiveRecord::Schema.define(version: 2018_12_05_183335) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-
-    t.boolean "booked", default: false
-
     t.string "image"
-
+    t.boolean "booked", default: false
     t.index ["user_id"], name: "index_requests_on_user_id"
   end
 
