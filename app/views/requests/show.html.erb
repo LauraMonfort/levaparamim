@@ -2,20 +2,8 @@
 <h4>Request Details</h4>
   <p>Origin: <%= @request.origin %></p>
   <p>Destination: <%= @request.destination %></p>
-  <p>Arriving date: <%= @request.end_date_time.strftime("%d/%m/%y") %></p>
-  <p>Size of the item: <%=@request.capacity%></p>
+  <p>Arriving date: <%= @request.delivery_date_time.strftime("%d/%m/%y") %></p>
+
   <p>Price: R$<%=@request.price%></p>
   <p>Comment: <%=@request.comment%></p>
-<%= button_to "Confirm deliver", {:controller => "bookings", :action => "create"}, params: { request_id: @request.id }, :class => "btn btn-success" %>
-
-<h4>Bringer details</h4>
-  <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large"/>
-  <p><%= @request.user.username %></p>
-  <p>Reviews</p>
-  <%= if @user_id.review.any? %>
-    <p><%= @user_id.review each do |review|%>
-    <p><%= @user_id.review.content %></p>
-    <p><%= end %></p>
-  <%= else %>
-    <p>No comments yet.</p>
-  <%= end %>
+<%= button_to "Aceitar proposta", {:controller => "bookings", :action => "create"}, params: { request_id: @request.id }, :class => "btn btn-success" %>
