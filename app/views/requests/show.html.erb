@@ -7,4 +7,4 @@
   <p>Price: R$<%=@request.price%></p>
   <p>Comment: <%=@request.comment%></p>
 <%#= button_to "Aceitar proposta", {:controller => "bookings", :action => "create"}, params: { request_id: @request.id }, :class => "btn btn-success" %>
-  <%= link_to "Sign-In", request_bookings_path(:request_id => @request.id, :status =>"opened"), :method => :post,  :class => "btn btn-success"%>
+  <%= link_to "Sign-In", request_bookings_path(:request_id => @request.id), :method => :post,  :class => "btn btn-success"%>
