@@ -2,7 +2,7 @@ class Request < ApplicationRecord
   belongs_to :user
   has_one :booking
 
-  validates :delivery_date_time, presence: true
+  validates :delivery_date, presence: true
   validates :origin, presence: true
   validates :destination, presence: true
   validates :size, presence: true
