@@ -1,22 +1,12 @@
 .home-banner {
-  background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), url('image.jpg');
-  background-image: -o-linear-gradient(top right, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('image.jpg');
-  background-image: linear-gradient(to bottom left, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('image.jpg');
+  background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), asset-url('image.jpg');
+  background-image: -o-linear-gradient(top right, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), asset-url('image.jpg');
+  background-image: linear-gradient(to bottom left, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), asset-url('image.jpg');
   background-size: cover;
   height: 100vh;
   color: #eee;
   text-align: center;
   padding-top: 40vh;
-  //   &:before {
-  // content: '';
-  // position: absolute;
-  // top: 0;
-  // right: 0;
-  // bottom: 0;
-  // left: 0;
-  // background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-  // opacity: .6;
-  // }
 
 }
 
