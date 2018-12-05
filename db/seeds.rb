@@ -145,31 +145,38 @@ reviews_attributes = [
   {
     content: 'super willing to help, and the delivery went completely fine. I recommend.',
     rating: 5,
+    review_type: sender
     # user: users.sample
   },
   {
     content: 'Super easy to reach and meet.',
     rating: 5,
+    review_type: sender
     # user: users.sample
   },
   {
     content: 'Nice guy. I recommend.',
     rating: 4,
+    review_type: sender
+
     # user: users.sample
   },
   {
     content: 'Despite some difficulties to meet, everything was ok.',
     rating: 5,
+    review_type: bringer
     # user: users.sample
   },
   {
     content: 'Available and charming. I recommend.',
     rating: 3,
+    review_type: sender
     # user: users.sample
   },
   {
     content: 'Do not recommend. Could not reach him on the phone',
     rating: 2,
+    review_type: sender
     # user: users.sample
   }
 ]
