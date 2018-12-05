@@ -1,6 +1,6 @@
 class RequestsController < ApplicationController
 
-def index
+  def index
     @requests = Request.all
     @requests = @requests.search_by_origin(params[:query_origin]) if params[:query_origin].present?
     @requests = @requests.search_by_destination(params[:query_destination]) if params[:query_destination].present?
@@ -49,8 +49,7 @@ def index
   private
 
   def request_params
-    params.require(:request).permit(:delivery_date, :origin, :destination, :size, :price, :comment, :booked)
+    params.require(:request).permit(:delivery_date, :origin, :destination, :size, :price, :comment, :booked, :image)
   end
-
 
 end

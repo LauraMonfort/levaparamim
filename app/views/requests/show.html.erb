@@ -2,9 +2,9 @@
 <h4>Request Details</h4>
   <p>Origin: <%= @request.origin %></p>
   <p>Destination: <%= @request.destination %></p>
-  <p>Arriving date: <%= @request.delivery_date_time.strftime("%d/%m/%y") %></p>
-
+  <p>Arriving date: <%= @request.delivery_date.strftime("%d/%m/%y") %></p>
   <p>Price: R$<%=@request.price%></p>
   <p>Comment: <%=@request.comment%></p>
+  <%= cl_image_tag @request.image, height: 300, width: 400, crop: :fill %>
 <%#= button_to "Aceitar proposta", {:controller => "bookings", :action => "create"}, params: { request_id: @request.id }, :class => "btn btn-success" %>
   <%= link_to "Sign-In", request_bookings_path(:request_id => @request.id), :method => :post,  :class => "btn btn-success"%>
