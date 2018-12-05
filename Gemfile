@@ -37,6 +37,6 @@ group :development, :test do
 end
 
 #For Messenger bot Gem pg have to be under production and bundle install need to be without production "bundle install --without production"
-group :production do
+# group :production do
   gem 'pg', '~> 0.21'
-end
+# end
