@@ -16,6 +16,8 @@
   text-shadow: 1px 1px 4px black;
   padding-top: 40px;
   font-weight: 450;
+  margin: 0 auto;
+  margin-right: 40px;
 }
 
 #subtitle {
@@ -23,15 +25,16 @@
   // text-shadow: 1px 1px 5px black;
   letter-spacing: 7px;
   font-size: 25px;
-  font-weight:300px;
-  // opacity: 0.5;
+  opacity: 0.7;
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.7);
-
+  margin: 0px;
+  margin-right: 50px;
 }
 
 .button {
   padding: 25px;
+  margin: 0px;
 }
 
 .fa-dolly{
