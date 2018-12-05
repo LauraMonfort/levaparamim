@@ -9,7 +9,7 @@ class Request < ApplicationRecord
   # validates :image, presence: true
   validates :price, presence: true
   validates :comment, presence: true
-  validates :booked, presence: true
+  # validates :booked, presence: true
 
  mount_uploader :image, PhotoUploader
 
