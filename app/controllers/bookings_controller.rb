@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
 
   def index
-    @booking = Booking.all
+    @booking = Booking.where(pa)
   end
 
   def show
