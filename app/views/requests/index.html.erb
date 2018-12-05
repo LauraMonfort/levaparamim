@@ -1,9 +1,9 @@
   <% if @requests.any? %>
     <% @requests.each do |request|  %>
-      <p>Price: R$ <%= request.price %></p>
-      <p>Origin: <%= request.origin %> at <%= request.start_date_time.strftime("%d/%m/%y") %></p>
-      <p>Destination: <%= request.destination %> at <%= request.end_date_time.strftime("%d/%m/%y")%></p>
-      <img class="avatar-large" src="https://kitt.lewagon.com/placeholder/users/arthur-littm">
+      <p>R$ <%= request.price %></p>
+      <p>Origem: <%= request.origin %></p>
+      <p>Destino: <%= request.destination %> at <%= request.delivery_date_time.strftime("%d/%m/%y")%></p>
+    <!--   <img class="avatar-large" src="https://kitt.lewagon.com/placeholder/users/arthur-littm"> -->
       <a class="card-link" href=<%= request_path(request) %> ></a>
     <% end %>
   <% else %>
