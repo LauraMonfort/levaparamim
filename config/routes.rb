@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   resources :bookings, only: [:index, :show] do
     resources :reviews, only: [:new, :create, :edit, :update]
   end
-  mount Facebook::Messenger::Server, at: 'bot'
+  mount Facebook::Messenger::Server, at: '/messenger/webhook'
 end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

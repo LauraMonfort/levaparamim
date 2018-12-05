@@ -11,6 +11,8 @@ class Request < ApplicationRecord
   validates :comment, presence: true
   validates :booked, presence: true
 
+ mount_uploader :image, PhotoUploader
+
  include PgSearch
   # pg_search_scope :search_by_type, :against => :capacity
   pg_search_scope :search_by_origin, against: :origin
