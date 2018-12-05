@@ -1,41 +1,37 @@
 .home-banner {
-  background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('image.jpg');
-  background-image: -o-linear-gradient(top right, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('image.jpg');
-  background-image: linear-gradient(to bottom left, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('image.jpg');
+  background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), asset-url('image.jpg');
+  background-image: -o-linear-gradient(top right, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), asset-url('image.jpg');
+  background-image: linear-gradient(to bottom left, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), asset-url('image.jpg');
   background-size: cover;
   height: 100vh;
   color: #eee;
   text-align: center;
   padding-top: 40vh;
-  //   &:before {
-  // content: '';
-  // position: absolute;
-  // top: 0;
-  // right: 0;
-  // bottom: 0;
-  // left: 0;
-  // background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-  // opacity: .6;
-  // }
 
 }
 
 #title {
   font-family: 'Open Sans', sans-serif;
   font-size: 60px;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 4px black;
   padding-top: 40px;
-  font-weight: 500;
+  font-weight: 450;
 }
 
 #subtitle {
   font-family: 'Monserrat', sans-serif;
-  text-shadow: 1px 1px 5px black;
+  // text-shadow: 1px 1px 5px black;
   letter-spacing: 7px;
   font-size: 23px;
   font-weight:300px;
+  opacity: 0.5;
 }
 
 .button {
   padding: 25px;
+}
+
+.fa-dolly{
+  color: #D23333;
+  font-size: 30px;
 }
