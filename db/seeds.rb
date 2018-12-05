@@ -75,6 +75,7 @@ requests_attributes = [
     price: '40',
     comment: "Need to deliver a medium-size box with a bunch of stuff. Anybody going there by car?",
     user: users.sample
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/medium_box_stuff.jpg"
   },
   {
     delivery_date: '07/12/2018',
@@ -84,6 +85,7 @@ requests_attributes = [
     price: "60",
     comment: "Is anyone going to Rio this date with a lot of free space? Have a small chair that I need to drop off there.",
     user: users.sample
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/fugly_chair.jpg"
   },
   {
     delivery_date: '08/12/2018',
@@ -93,6 +95,7 @@ requests_attributes = [
     price: "55",
     comment: "Have big lugagge to take to Rio, could fit in a big trunk. Anyone with free space in for some bucks?",
     user: users.sample
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/overloaded-suitcase.jpg"
   },
   {
     delivery_date: '09/12/2019',
@@ -102,6 +105,7 @@ requests_attributes = [
     price: "20",
     comment: "Can anyone bring me the keys I forgot? I need then asap. Anyone willing to help for some cash???",
     user: users.sample
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/giant_haunted_key.jpg"
   },
   {
     delivery_date: '10/12/2018',
@@ -111,6 +115,7 @@ requests_attributes = [
     price: '35',
     comment: "Forgot to bring a jacket and trousers to Sao Paulo. Could you slip in you bag when coming to Sao Paulo?",
     user: users.sample
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/folded_jacket.jpg"
   },
   {
     delivery_date: '11/12/2018',
@@ -120,6 +125,7 @@ requests_attributes = [
     price: "40",
     comment: "Forgot my folder in Rio, anyone coming to Sao Paulo that could bring me?",
     user: users.sample
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
   },
   {
     delivery_date: '12/12/2018',
@@ -129,6 +135,7 @@ requests_attributes = [
     price: "35",
     comment: "Coming to Sao Paulo tonight? Could you bring me a small bag?",
     user: users.sample
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
   },
   {
     delivery_date: '13/12/2018',
@@ -138,6 +145,7 @@ requests_attributes = [
     price: "60",
     comment: "Need to bring a small table to Rio. Could you fit it in your",
     user: users.sample
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/small_table.jpg"
   }
 ]
 
