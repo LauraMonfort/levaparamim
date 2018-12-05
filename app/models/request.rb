@@ -9,6 +9,7 @@ class Request < ApplicationRecord
   validates :price, presence: true
   validates :comment, presence: true
 
+ mount_uploader :image, PhotoUploader
 
  include PgSearch
   # pg_search_scope :search_by_type, :against => :capacity
