@@ -1,7 +1,8 @@
 .tabs {
-  background: #53443F;
+
   display: flex;
-  padding: 10px 10px 0 10px
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
 }
 .tabs a {
   color: white;
@@ -10,6 +11,7 @@
   cursor: pointer;
   text-decoration: none;
   opacity: 0.8;
+  background: #53443F;
 }
 .tabs h3 {
   font-size: 17px;
@@ -17,6 +19,7 @@
   margin-top: 0;
 }
 .tabs p {
+  background: #53443F;
   opacity: 0.5;
   margin-bottom: 0;
 }
