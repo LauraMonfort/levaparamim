@@ -15,8 +15,8 @@
 
             <p>R$ <%= request.price %></p>
             <p>Size: <%= request.size %></p>
-            <p>Origem: <%= request.origin %></p>
-            <p>Destino: <%= request.destination %> at <%= request.delivery_date_time.strftime("%d/%m/%y")%> </p>
+            <p>Origin: <%= request.origin %></p>
+            <p>Destination: <%= request.destination %> at <%= request.delivery_date_time.strftime("%d/%m/%y")%> </p>
         </div>
         <a class="card-link" href=<%= request_path(request) %> ></a>
       </div>
