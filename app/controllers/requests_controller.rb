@@ -1,11 +1,28 @@
 class RequestsController < ApplicationController
 
   def index
-    @requests = Request.all
-    @requests = @requests.search_by_origin(params[:query_origin]) if params[:query_origin].present?
-    @requests = @requests.search_by_destination(params[:query_destination]) if params[:query_destination].present?
-    @requests = @requests.where(delivery_date: params[:query_delivery_date]) if params[:query_delivery_date].present?
+    if params[:query_origin].present? || params[:query_destination].present?
+      @requests = Request.all
+      @requests = @requests.search_by_origin(params[:query_origin]) if params[:query_origin].present?
+      @requests = @requests.search_by_destination(params[:query_destination]) if params[:query_destination].present?
+      #@requests = @requests.where(delivery_date: params[:query_delivery_date]) if params[:query_delivery_date].present?
+    else
+      @requests = Request.all
+
+      # @requests = Request.where.not(latitude: nil, longitude: nil)
+    end
+
+    @markers = @requests.map do |request|
+      {
+        lng: request.longitude,
+        lat: request.latitude,
+        # infoWindow: { content: render_to_string(partial: "/requests/map_window", locals: { request: request }) }
+      }
+
+    end
+
   end
+
 
   def home
   end
