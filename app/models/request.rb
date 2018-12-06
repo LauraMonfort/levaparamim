@@ -10,9 +10,12 @@ class Request < ApplicationRecord
   validates :price, presence: true
   validates :comment, presence: true
 
- mount_uploader :image, PhotoUploader
+  mount_uploader :image, PhotoUploader
 
- include PgSearch
+  geocoded_by :origin
+  after_validation :geocode, if: :will_save_change_to_origin?
+
+  include PgSearch
   # pg_search_scope :search_by_type, :against => :capacity
   pg_search_scope :search_by_origin, against: :origin
   pg_search_scope :search_by_destination, against: :destination
