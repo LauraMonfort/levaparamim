@@ -10,18 +10,6 @@
   </div>
   </div>
 
-  <%= form_tag requests_path, method: :get, class: 'form-inline' do %>
-    <%= text_field_tag :query_origin, params[:query_origin], :required => true, class: "form form-control",
-    placeholder: "From"
-    %>
-    <%= text_field_tag :query_destination, params[:query_destination], :required => true, class: "form form-control", placeholder: "For"
-    %>
-    <%= date_field_tag :query_delivery_date, "", :required => false, class: "form form-control",
-    placeholder: "Date do you need your item to be delivered?"
-    %>
-    <%= submit_tag "Find", class: "btn btn-danger" %>
-
-  <% end %>
 
   <div class="container">
     <div class="row">
