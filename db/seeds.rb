@@ -74,7 +74,7 @@ requests_attributes = [
     size: 'Fits in a car',
     price: '40',
     comment: "Need to deliver a medium-size box with a bunch of stuff. Anybody going there by car?",
-    user: users.sample
+    user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/medium_box_stuff.jpg"
   },
   {
@@ -84,7 +84,7 @@ requests_attributes = [
     size: 'Fits in a van',
     price: "60",
     comment: "Is anyone going to Rio this date with a lot of free space? Have a small chair that I need to drop off there.",
-    user: users.sample
+    user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/fugly_chair.jpg"
   },
   {
@@ -94,7 +94,7 @@ requests_attributes = [
     size: 'Fits in a big car',
     price: "55",
     comment: "Have big lugagge to take to Rio, could fit in a big trunk. Anyone with free space in for some bucks?",
-    user: users.sample
+    user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/overloaded-suitcase.jpg"
   },
   {
@@ -104,7 +104,7 @@ requests_attributes = [
     size: 'Fits in a pocket',
     price: "20",
     comment: "Can anyone bring me the keys I forgot? I need then asap. Anyone willing to help for some cash???",
-    user: users.sample
+    user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/giant_haunted_key.jpg"
   },
   {
@@ -114,7 +114,7 @@ requests_attributes = [
     size: 'Fits in a bag',
     price: '35',
     comment: "Forgot to bring a jacket and trousers to Sao Paulo. Could you slip in you bag when coming to Sao Paulo?",
-    user: users.sample
+    user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/folded_jacket.jpg"
   },
   {
@@ -124,7 +124,7 @@ requests_attributes = [
     size: 'Fits in a car',
     price: "40",
     comment: "Forgot my folder in Rio, anyone coming to Sao Paulo that could bring me?",
-    user: users.sample
+    user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
   },
   {
@@ -134,7 +134,7 @@ requests_attributes = [
     size: 'Fits in a car',
     price: "35",
     comment: "Coming to Sao Paulo tonight? Could you bring me a small bag?",
-    user: users.sample
+    user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
   },
   {
@@ -144,13 +144,14 @@ requests_attributes = [
     size: 'Fits in a van',
     price: "60",
     comment: "Need to bring a small table to Rio. Could you fit it in your",
-    user: users.sample
+    user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/small_table.jpg"
   }
 ]
 
 Request.create!(requests_attributes)
 puts 'Finished requests!'
+
 # Review's seeding
 
 # puts 'Creating reviews...'
@@ -158,8 +159,8 @@ puts 'Finished requests!'
 #   {
 #     content: 'super willing to help, and the delivery went completely fine. I recommend.',
 #     rating: 5,
-#     review_type: 'sender'
-#     # user: users.sample
+#     review_type: 'sender',
+#     # user: users.sample,
 #   },
 #   {
 #     content: 'Super easy to reach and meet.',
