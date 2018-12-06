@@ -1,6 +1,6 @@
 class Request < ApplicationRecord
   belongs_to :user
-  has_one :booking
+  has_one :booking, dependent: :destroy
 
   validates :delivery_date, presence: true
   validates :origin, presence: true
