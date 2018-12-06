@@ -1,16 +1,12 @@
 /* Main navbar */
 .navbar-wagon {
-  // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
-  transition: all 0.3s ease;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: #D8D8D8;
   height: 70px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  background-color: transparent;
-  transition: 0.5s background-color ease;
 }
 
 .navbar-wagon-white {
@@ -85,15 +81,15 @@
 }
 
 .form {
-box-shadow: 1px 1px 5px black;
-height: 30px;
-width: 100px;
-font-family: Nunito;
-font-size: 11pt;
-color: gray;
-text-decoration: none;
-text-decoration: none;
-background-color: white;
-opacity: 0.3;
-margin: none;
+  box-shadow: 1px 1px 2px black;
+  background-color: white;
+  opacity: 0.5;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.btn-danger{
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px black;
+
 }
