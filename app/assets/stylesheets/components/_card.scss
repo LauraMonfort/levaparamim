@@ -1,12 +1,18 @@
 .main-container {
-  display: flex;
+  display: 100%;
 }
 
-.card-container{
-  flex-grow: 1;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
+// .card-container{
+//   flex-grow: 1;
+//   display: flex;
+//   flex-wrap: wrap;
+//   padding: 10px;
+// }
+
+.card {
+  flex: 1 1 auto;
+  margin: 10px;
+  position: relative;
 }
 
 .card-body-front {
