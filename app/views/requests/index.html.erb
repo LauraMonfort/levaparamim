@@ -1,48 +1,47 @@
-<div class="main-conta7iner">
-
+<div class="main-container">
   <div class="card-container">
     <% if @requests.any? %>
-      <% @requests.each do |request|  %>
-        <div class="flip3D">
-              <div class="front">
-                <div class="card-body-front">
-                  <div class="card-picture" style="background: url(<%= request.image %>);">
-                    <!-- <img class="card-user avatar avatar-large" src="images/seb.jpeg"> -->
-                    <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-                    <!-- <a class="card-link" href="#" ></a> -->
-                  </div>
-                  <div class="card-description-flex">
-                    <p><%= request.origin %></p>
-                    <h2>R$ <%= request.price %></h2>
-                  </div>
-                  <div class="card-description-flex">
-                    <p><%= request.destination %></p>
-                    <p><%= request.delivery_date.strftime("%d/%m/%y")%></p>
-                  </div>
-                </div>
-              </div>
-              <div class="back">Box 1 - Back
-                <div class="card-body-back">
-                  <div class="card-description-flex">
-                    <h2><%= request.user.first_name %> <%= request.user.last_name %></h2>
-                  <div class="card-description-flex">
-                    <p><%= request.origin %></p>
-                  </div>
-                  <div class="card-description-flex">
-                    <p><%= request.destination %></p>
-                    <p><%= request.delivery_date.strftime("%d/%m/%y")%></p>
-                  </div>
-                  <div class="card-description-flex">
-                    <p><%= request.comment %></p>
-                  </div>
-                  </div>
-                </div>
-              </div>
+    <% @requests.each do |request|  %>
+    <div class="flip3D">
+      <div class="front">
+        <div class="card-body-front">
+          <div class="card-picture" style="background: url(<%= request.image %>);">
+            <!-- <img class="card-user avatar avatar-large" src="images/seb.jpeg"> -->
+            <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+            <!-- <a class="card-link" href="#" ></a> -->
           </div>
-      <% end %>
-  <% else %>
+          <div class="card-description-flex">
+            <p><%= request.origin[0..30] + '...' %></p>
+            <h2>R$ <%= request.price %></h2>
+          </div>
+          <div class="card-description-flex">
+            <p><%= request.destination[0..30] + '...' %></p>
+            <p><%= request.delivery_date.strftime("%d/%m/%y")%></p>
+          </div>
+        </div>
+      </div>
+      <div class="back">Box 1 - Back
+        <!-- <div class="card-body-back">
+          <div class="card-description-flex">
+            <h2><%= request.user.first_name %> <%= request.user.last_name %></h2>
+            <div class="card-description-flex">
+              <p><%= request.origin %></p>
+            </div>
+            <div class="card-description-flex">
+              <p><%= request.destination %></p>
+              <p><%= request.delivery_date.strftime("%d/%m/%y")%></p>
+            </div>
+            <div class="card-description-flex">
+              <p><%= request.comment %></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <% end %>
+    <% else %>
     <p>No requests found. Try again.</p>
-  <% end %>
-</div>
-  <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+    <% end %>
+  </div>
+    <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 </div>
