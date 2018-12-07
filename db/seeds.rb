@@ -162,7 +162,7 @@ requests_attributes = [
     price: "40",
     comment: "Forgot my folder in Rio, anyone coming to São Paulo that could bring me?",
     user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544206219/fugly_folder.jpg"
   },
   {
     delivery_date: '09/12/2018',
