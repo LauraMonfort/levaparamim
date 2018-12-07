@@ -79,8 +79,8 @@ users_attributes = [
   {
     email: 'joao.queiroz@aol.com',
     password: '123456',
-    username: 'queirozjoao'
-    first_name: 'Joao'
+    username: 'queirozjoao',
+    first_name: 'Joao',
     last_name: 'Queiroz'
   }
 ]
@@ -88,13 +88,12 @@ users_attributes = [
 User.create!(users_attributes)
 users = User.all
 puts 'Finished user!'
-# Request's seedingQ8OV29V7
 
 puts 'Creating requests...'
 requests_attributes = [
   {
     delivery_date: '09/12/2018',
-    origin: 'Avenida Paulista, 2300 - Sao Paulo',
+    origin: 'Avenida Paulista, 2300 - São Paulo',
     destination: 'Rua Aprazivel, 18 - Rio de Janeiro',
     size: 'Fits in a bag',
     price: '20',
@@ -105,7 +104,7 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Henrique Schaumann, 678 - Sao Paulo',
+    origin: 'Rua Henrique Schaumann, 678 - São Paulo',
     destination: 'Rua do Catete, 18 - Rio de Janeiro',
     size: 'Fits in a car',
     price: '40',
@@ -115,7 +114,7 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Purpurina, 230 - Sao Paulo',
+    origin: 'Rua Purpurina, 230 - São Paulo',
     destination: 'Rua Visconde de Piraja, 38 - Rio de Janeiro',
     size: 'Fits in a van',
     price: "60",
@@ -125,7 +124,7 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua dos Pinheiros, 325 - Sao Paulo',
+    origin: 'Rua dos Pinheiros, 325 - São Paulo',
     destination: 'Avenida Nossa Senhora, 56 - Rio de Janeiro',
     size: 'Fits in a big car',
     price: "55",
@@ -135,7 +134,7 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Augusta, 2134 - Sao Paulo',
+    origin: 'Rua Augusta, 2134 - São Paulo',
     destination: 'Avenida do Maracana, 81 - Rio de Janeiro',
     size: 'Fits in a pocket',
     price: "20",
@@ -146,37 +145,37 @@ requests_attributes = [
   {
     delivery_date: '09/12/2018',
     origin: 'Rua Barata Ribeiro, 449 - Rio de Janeiro',
-    destination: 'Avenida da Consolaçao, 39 - Sao Paulo',
+    destination: 'Avenida da Consolaçao, 39 - São Paulo',
     size: 'Fits in a bag',
     price: '35',
-    comment: "Forgot to bring a jacket and trousers to Sao Paulo. Could you slip in you bag when coming to Sao Paulo?",
+    comment: "Forgot to bring a jacket and trousers to São Paulo. Could you slip in you bag when coming to São Paulo?",
     user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/folded_jacket.jpg"
   },
   {
     delivery_date: '09/12/2018',
     origin: 'Ladeira da Gloria, 26 - Rio de Janeiro',
-    destination: 'Rua Alfonso Bovero, 23 - Sao Paulo',
+    destination: 'Rua Alfonso Bovero, 23 - São Paulo',
     size: 'Fits in a car',
     price: "40",
-    comment: "Forgot my folder in Rio, anyone coming to Sao Paulo that could bring me?",
+    comment: "Forgot my folder in Rio, anyone coming to São Paulo that could bring me?",
     user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
   },
   {
     delivery_date: '09/12/2018',
     origin: 'Rua Leblon, 11 - Rio de Janeiro',
-    destination: 'Rua Capote Valente, 90 - Sao Paulo',
+    destination: 'Rua Capote Valente, 90 - São Paulo',
     size: 'Fits in a car',
     price: "35",
-    comment: "Coming to Sao Paulo tonight? Could you bring me a small bag?",
+    comment: "Coming to São Paulo tonight? Could you bring me a small bag?",
     user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
   },
   {
     delivery_date: '09/12/2018',
     origin: 'Avenida Atlantica, 908 - Rio de Janeiro',
-    destination: 'Avenida Jabaquara, 588 - Sao Paulo',
+    destination: 'Avenida Jabaquara, 588 - São Paulo',
     size: 'Fits in a van',
     price: "60",
     comment: "Need to bring a small table to Rio. Could you fit it in your",
@@ -227,7 +226,7 @@ reviews_attributes = [
     rating: 2,
     review_type: 'sender',
     user: users.sample
-  }
+  },
    {
     content: 'Made me wait 50min longer than we accorded and did not even apologize. Would think twice before choosing him.',
     rating: 1,
