@@ -1,0 +1,16 @@
+<div class="flip3D">
+  <div class="card-body-front">
+    <div class="card-picture" style="background: url('images/berlin.jpg');">
+      <img class="card-user avatar avatar-large" src="images/seb.jpeg">
+      <a class="card-link" href="#" ></a>
+    </div>
+        <div class="card-description-flex">
+          <p><%= request.origin %></p>
+          <p>R$<%= request.price %></p>
+        </div>
+        <div class="card-description-flex">
+          <%= request.destination %></p>
+          <%= request.delivery_date.strftime("%d/%m/%y") %></p>
+      </div>
+   </div>
+</div>

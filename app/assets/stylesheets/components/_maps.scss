@@ -12,16 +12,17 @@
 }
 
 #map {
-  flex: 0 0 450px;
+  flex: 0 0 522px;
   height: 100vh;
-  width: 500px;
+  // width: 500px;
   position: sticky !important;
   top: 0 !important;
-  float: right;
-  margin: -30px;
+  // float: right;
+  // margin: -30px;
 }
 
 .container {
   display: block;
   justify-content: space-between;
 }
+
