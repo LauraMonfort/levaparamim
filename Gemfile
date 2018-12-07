@@ -25,6 +25,8 @@ gem "geocoder"
 #Gem for Messenger bot
 gem 'facebook-messenger'
 
+#Gem autocomplete map
+gem "algoliasearch-rails"
 
 group :development do
   gem 'web-console', '>= 3.3.0'
