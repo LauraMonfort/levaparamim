@@ -5,7 +5,7 @@ class RequestsController < ApplicationController
       @requests = Request.all
       @requests = @requests.search_by_origin(params[:query_origin]) if params[:query_origin].present?
       @requests = @requests.search_by_destination(params[:query_destination]) if params[:query_destination].present?
-      #@requests = @requests.where(delivery_date: params[:query_delivery_date]) if params[:query_delivery_date].present?
+      @requests = @requests.where(delivery_date: params[:query_delivery_date]) if params[:query_delivery_date].present?
     else
       @requests = Request.all
 

@@ -6,6 +6,9 @@ import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 const mapElement = document.getElementById('map');
 
 if (mapElement) {
+  map.addControl(new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken
+  }));
   mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
   const map = new mapboxgl.Map({
     container: 'map',
@@ -34,14 +37,21 @@ if (markers.length === 0) {
 
 
 
-const addressInput = document.getElementById('request_address');
+// const addressInput = document.getElementById('request_address');
+const addressInput = document.getElementsByClassName('form-control');
 
-// if (addressInput) {
-//   const places = require('places.js');
-//   const placesAutocomplete = places({
-//     container: addressInput
-//   });
-// }
+if (addressInput) {
+  const places = require('places.js');
+  const placesAutocomplete = places({
+    container: addressInput[1]
+  });
+}
+if (addressInput) {
+  const places = require('places.js');
+  const placesAutocomplete = places({
+    container: addressInput[0]
+  });
+}
 
 // if (mapElement) {
 //   markers.forEach((marker) => {
@@ -52,3 +62,8 @@ const addressInput = document.getElementById('request_address');
 //     .addTo(map);
 //   })
 // }
+
+const algolia = document.getElementsByClassName('algolia-places')
+
+algolia[0].style.display  = "inline"
+algolia[1].style.display  = "inline"
