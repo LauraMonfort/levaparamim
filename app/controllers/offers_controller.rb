@@ -2,7 +2,7 @@ class OffersController < ApplicationController
 
   SIZE = "<option disabled selected>Size of your item</option><option>Fits in a pocket<option>Fits in a bag<option>Fits in a car<option>Fits in a big car<option>Fits in a van"
 
-  skip_before_action :authenticate_user!, only: [:home, :index, :show]
+  # skip_before_action :authenticate_user!, only: [:home, :index, :show]
   def index
     @offers = Offer.all
     @offers = @offers.where(size: params[:query_size]) if params[:query_size].present?
