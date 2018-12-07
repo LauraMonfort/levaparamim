@@ -21,6 +21,7 @@ gem 'devise'
 gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
 gem "geocoder"
+gem 'faker'
 
 #Gem for Messenger bot
 gem 'facebook-messenger'

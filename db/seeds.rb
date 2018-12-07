@@ -16,71 +16,71 @@ users_attributes = [
   {
     email: 'flavio123@gmail.com',
     password: '123456',
-    username: 'Flavio',
+    # username: 'Flavio',
     first_name: 'Flavio',
     last_name: 'Souza'
   },
   {
     email: 'rodrigo123@gmail.com',
     password: '123456',
-    username: 'Rodrigo123',
+    # username: 'Rodrigo123',
     first_name: 'Rodrigo',
     last_name: 'Pereira'
   },
   {
     email: 'ricardo@gmail.com',
     password: '123456',
-    username: 'Ricardo',
+    # username: 'Ricardo',
     first_name: 'Ricardo',
     last_name: 'dos Santos'
   },
   {
     email: 'flavia@msn.com',
     password: '123456',
-    username: 'Flavinha',
+    # username: 'Flavinha',
     first_name: 'Flavia',
     last_name: 'da Silva'
   },
   {
     email: 'olivia@sfr.com',
     password: '123456',
-    username: 'Olivia-Linda',
+    # username: 'Olivia-Linda',
     first_name: 'Olivia',
     last_name: 'Linda'
   },
   {
     email: 'Alexia@aol.com',
     password: '123456',
-    username: 'Alexia',
+    # username: 'Alexia',
     first_name: 'Alexia',
     last_name: 'Macedo'
   },
   {
     email: 'marcelo.freitas@gmail.com',
     password: '123456',
-    username: 'marfreitas',
+    # username: 'marfreitas',
     first_name: 'Marcelo',
     last_name: 'Freitas'
   },
   {
     email: 'camila.gois@aol.com',
     password: '123456',
-    username: 'Camygois',
+    # username: 'Camygois',
     first_name: 'Camila',
     last_name: 'Gois'
   },
   {
     email: 'larissa.dolores@gmail.com',
     password: '123456',
-    username: 'Laridor',
+    # username: 'Laridor',
     first_name: 'Larissa',
     last_name: 'Dolores'
   },
   {
     email: 'joao.queiroz@aol.com',
     password: '123456',
-    username: 'queirozjoao'
-    first_name: 'Joao'
+    # username: 'queirozjoao',
+    first_name: 'Joao',
     last_name: 'Queiroz'
   }
 ]
@@ -88,13 +88,13 @@ users_attributes = [
 User.create!(users_attributes)
 users = User.all
 puts 'Finished user!'
-# Request's seedingQ8OV29V7
+# Request'size seedingQ8OV29V7
 
 puts 'Creating requests...'
 requests_attributes = [
   {
     delivery_date: '09/12/2018',
-    origin: 'Avenida Paulista, 2300 - Sao Paulo',
+    origin: 'Avenida Paulista, 2300 - São Paulo',
     destination: 'Rua Aprazivel, 18 - Rio de Janeiro',
     size: 'Fits in a bag',
     price: '20',
@@ -105,7 +105,7 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Henrique Schaumann, 678 - Sao Paulo',
+    origin: 'Rua Henrique Schaumann, 678 - São Paulo',
     destination: 'Rua do Catete, 18 - Rio de Janeiro',
     size: 'Fits in a car',
     price: '40',
@@ -115,7 +115,7 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Purpurina, 230 - Sao Paulo',
+    origin: 'Rua Purpurina, 230 - São Paulo',
     destination: 'Rua Visconde de Piraja, 38 - Rio de Janeiro',
     size: 'Fits in a van',
     price: "60",
@@ -125,7 +125,7 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua dos Pinheiros, 325 - Sao Paulo',
+    origin: 'Rua dos Pinheiros, 325 - São Paulo',
     destination: 'Avenida Nossa Senhora, 56 - Rio de Janeiro',
     size: 'Fits in a big car',
     price: "55",
@@ -135,7 +135,7 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Augusta, 2134 - Sao Paulo',
+    origin: 'Rua Augusta, 2134 - São Paulo',
     destination: 'Avenida do Maracana, 81 - Rio de Janeiro',
     size: 'Fits in a pocket',
     price: "20",
@@ -146,37 +146,37 @@ requests_attributes = [
   {
     delivery_date: '09/12/2018',
     origin: 'Rua Barata Ribeiro, 449 - Rio de Janeiro',
-    destination: 'Avenida da Consolaçao, 39 - Sao Paulo',
+    destination: 'Avenida da Consolaçao, 39 - São Paulo',
     size: 'Fits in a bag',
     price: '35',
-    comment: "Forgot to bring a jacket and trousers to Sao Paulo. Could you slip in you bag when coming to Sao Paulo?",
+    comment: "Forgot to bring a jacket and trousers to São Paulo. Could you slip in you bag when coming to São Paulo?",
     user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/folded_jacket.jpg"
   },
   {
     delivery_date: '09/12/2018',
     origin: 'Ladeira da Gloria, 26 - Rio de Janeiro',
-    destination: 'Rua Alfonso Bovero, 23 - Sao Paulo',
+    destination: 'Rua Alfonso Bovero, 23 - São Paulo',
     size: 'Fits in a car',
     price: "40",
-    comment: "Forgot my folder in Rio, anyone coming to Sao Paulo that could bring me?",
+    comment: "Forgot my folder in Rio, anyone coming to São Paulo that could bring me?",
     user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
   },
   {
     delivery_date: '09/12/2018',
     origin: 'Rua Leblon, 11 - Rio de Janeiro',
-    destination: 'Rua Capote Valente, 90 - Sao Paulo',
+    destination: 'Rua Capote Valente, 90 - São Paulo',
     size: 'Fits in a car',
     price: "35",
-    comment: "Coming to Sao Paulo tonight? Could you bring me a small bag?",
+    comment: "Coming to São Paulo tonight? Could you bring me a small bag?",
     user: users.sample,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
   },
   {
     delivery_date: '09/12/2018',
     origin: 'Avenida Atlantica, 908 - Rio de Janeiro',
-    destination: 'Avenida Jabaquara, 588 - Sao Paulo',
+    destination: 'Avenida Jabaquara, 588 - São Paulo',
     size: 'Fits in a van',
     price: "60",
     comment: "Need to bring a small table to Rio. Could you fit it in your",
@@ -188,6 +188,15 @@ requests_attributes = [
 Request.create!(requests_attributes)
 puts 'Finished requests!'
 
+10.times do
+  Booking.create!(
+    status: 'Confirmado',
+    user: User.all.sample,
+    request: Request.all.sample
+    )
+end
+puts 'Finished bookings!'
+
 # Review's seeding
 
 puts 'Creating reviews...'
@@ -196,55 +205,64 @@ reviews_attributes = [
     content: 'super willing to help, and the delivery went completely fine. I recommend.',
     rating: 5,
     review_type: 'sender',
-    user: users.sample
+    user: users.sample,
+    booking: Booking.all.sample
   },
   {
     content: 'Super easy to reach and meet.',
     rating: 5,
     review_type: 'sender',
-    user: users.sample
+    user: users.sample,
+    booking: Booking.all.sample
   },
   {
     content: 'Nice guy. I recommend.',
     rating: 4,
     review_type: 'sender',
-    user: users.sample
+    user: users.sample,
+    booking: Booking.all.sample
   },
   {
     content: 'Despite some difficulties to meet, everything was ok.',
     rating: 5,
     review_type: 'sender',
-    user: users.sample
+    user: users.sample,
+    booking: Booking.all.sample
   },
   {
     content: 'Available and charming. I recommend.',
     rating: 3,
     review_type: 'sender',
-    user: users.sample
+    user: users.sample,
+    booking: Booking.all.sample
   },
   {
     content: 'Do not recommend. Could not reach him on the phone',
     rating: 2,
     review_type: 'sender',
-    user: users.sample
-  }
+    user: users.sample,
+    booking: Booking.all.sample
+  },
    {
     content: 'Made me wait 50min longer than we accorded and did not even apologize. Would think twice before choosing him.',
     rating: 1,
     review_type: 'sender',
-    user: users.sample
+    user: users.sample,
+    booking: Booking.all.sample
   },
   {
     content: 'Evertyhing ok.',
     rating: 5,
     review_type: 'sender',
-    user: users.sample
+    user: users.sample,
+    booking: Booking.all.sample
   },
   {
     content: 'Some miscommunication on both parts, but everything went fine in the end.',
     rating: 4,
     review_type: 'sender',
-    user: users.sample
+    user: users.sample,
+    booking: Booking.all.sample
   }
 ]
 Review.create!(reviews_attributes)
