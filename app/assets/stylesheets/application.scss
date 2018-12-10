@@ -16,19 +16,19 @@
 @import "requests/index";
 
 /* Importing Google fonts */
-@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+// @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 
 body {
   margin: 0;
-  font-family: 'Varela Round', sans-serif;
+  // font-family: 'Varela Round', sans-serif;
   font-size: 18px;
-  background: white;
+  background: #F4F4F4;
 }
 p {
   font-weight: lighter;
 }
 h1, h2, h3 {
-  font-family: 'Varela Round', sans-serif;
+  // font-family: 'Varela Round', sans-serif;
   font-weight: bold;
 }
 h1 {
