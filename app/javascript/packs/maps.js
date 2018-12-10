@@ -49,7 +49,7 @@ if (addressInput) {
 if (addressInput) {
   const places = require('places.js');
   const placesAutocomplete = places({
-    container: addressInput[0]
+    container: addressInput[2]
   });
 }
 

@@ -9,8 +9,14 @@
 
     <!-- <div id="home-search"> -->
       <%= form_tag root_path, method: :get, class: 'form-inline' do %>
-      <%= date_field_tag :query_delivery_date, "", :required => false, class: "form-control",
-      placeholder: "Delivery date"%>
+<!--       datepicker -begin ---- -->
+      <%= text_field :query_delivery_date, "", :required => false, class: "form-control",
+      placeholder: "Delivery date",
+    data: {
+      flatpickr_format: "Y-m-d",
+      flatpickr_min_date: Time.zone.now
+    } %>
+<!--       datepicker - end ---- -->
       <%= text_field_tag :query_origin, params[:query_origin], :required => true, class: "form-control", placeholder: "From"%>
       <%= text_field_tag :query_destination, params[:query_destination], :required => true, class: "form-control", placeholder: "To"%>
       <%= submit_tag "Find delivery requests", class: "btn btn-primary" %>
