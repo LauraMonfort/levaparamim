@@ -31,16 +31,16 @@
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
-  <% if action_name == "home" %>
+  <% # if action_name == "home" %>
   <%= render 'shared/navbar' %>
-  <% else %>
+  <% #else %>
   <%= render 'shared/navbar' %>
   <%= render 'shared/flashes' %>
-  <% end %>
+  <% #end %>
   <%= yield %>
-  <% unless action_name == "home" %>
+  <% #unless action_name == "home" %>
   <%= render 'shared/footer' %>
-  <% end %>
+  <% # end %>
   <%= javascript_include_tag 'application'%>
   <%= javascript_pack_tag 'application'%>
   <%= javascript_pack_tag 'maps'%>
