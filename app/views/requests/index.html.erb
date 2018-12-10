@@ -4,7 +4,7 @@
       <% @requests.each do |request|  %>
         <div class="flip3D">
           <div class="front">
-            <div class="card-body">
+            <div class="card-body-front">
               <div class="card-picture" style="background: url(<%= request.image %>);">
                 <img class="card-user avatar avatar-large" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
               </div>
@@ -19,24 +19,40 @@
             </div>
           </div>
           <div class="back">
-            <div class="card-body">
-              <div class="card-description-flex">
-                <h2><%= request.user.first_name %> <%= request.user.last_name %></h2>
+            <div class="card-body-back">
+              <div class="stars">
+                <% if Review.where(user_id: request.user_id).any? %>
+                  <% Review.where(user_id: request.user_id).average(:rating).to_i.times do %>
+                    <p><i class="fas fa-star fa-xs"></i></p>
+                  <% end %>
+                <% else %>
+                  <p><%= "Not rated."%></p>
+                <% end %>
               </div>
               <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.origin %></p>
-              </div>
-              <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.destination %></p>
-              </div>
-              <div class="card-description-flex">
+                <h5><%= request.user.first_name %> <%= request.user.last_name %></h5>
                 <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
               </div>
               <div class="card-description-flex">
-                <p><%= request.comment %></p>
+                <p><strong>Origin: </strong></i> <%= request.origin %></p>
+              </div>
+              <div class="card-description-flex">
+                <p><strong>Destination: </strong></i> <%= request.destination %></p>
+              </div>
+              <div class="card-description-flex">
+                <p><strong>Comment: </strong><%= request.comment %></p>
+              </div>
+              <div class="card-description-flex">
+                <% if Review.where(user_id: request.user_id).any?%>
+                  <p><strong>Last review: </strong><%= Review.where(user_id: request.user_id).last.content %></p>
+                <% else %>
+                  <p><%= "No reviews."%></p>
+                <% end %>
               </div>
             </div>
-            <%= link_to "Deliver it", request_bookings_path(:request_id => request.id), :method => :post,  :class => "btn btn-danger sweet-alert-booking-confirmation" %>
+            <div class="button-deliver">
+            <%= link_to "Deliver it", request_bookings_path(:request_id => request.id), :method => :post,  :class => "btn btn-danger btn-xs sweet-alert-booking-confirmation" %>
+            </div>
           </div>
         </div>
       <% end %>

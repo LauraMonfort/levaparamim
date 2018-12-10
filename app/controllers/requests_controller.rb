@@ -16,7 +16,7 @@ class RequestsController < ApplicationController
       {
         lng: request.longitude,
         lat: request.latitude,
-        # infoWindow: { content: render_to_string(partial: "/requests/map_window", locals: { request: request }) }
+        infoWindow: { content: render_to_string(partial: "/requests/map_window", locals: { request: request }) }
       }
 
     end
