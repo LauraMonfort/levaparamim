@@ -1,16 +1,19 @@
 import swal from 'sweetalert';
 
 function bindSweetAlertButtonBookingConfirmation() {
-  const swalButton = document.getElementById('sweet-alert-booking-confirmation');
-  if (swalButton) { // protect other pages
-    swalButton.addEventListener('click', () => {
-      swal({
-        title: "Your item is booked",
-        text: "Congratulation!",
-        icon: "success",
-        // button: ["ok","Go to dashboard"],
+  const swalButtons = document.querySelectorAll('.sweet-alert-booking-confirmation');
+  if (swalButtons) { // protect other pages
+    swalButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        swal({
+          title: "Delivery request sent!",
+          text: "The sender has been notified. Wait for his confirmation! Check the status on My deliveries",
+          icon: "success",
+          // button: ["ok","Go to dashboard"],
+        });
       });
-    });
+    })
+
   }
 }
 
