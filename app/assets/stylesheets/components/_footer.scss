@@ -4,28 +4,25 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px;
-  // color: rgba(0,0,0,0.3);
+}
 
 //for fixed the footer at the bottom of the page
-  bottom: 0px;
-  height: 30px;
-  right: 0%;
-  left: 0%;
-  position: fixed!important;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  visibility: visible;
-
-
-}
+//   bottom: 0px;
+//   height: 30px;
+//   right: 0%;
+//   left: 0%;
+//   position: fixed!important;
+//   position: absolute;
+//   width: 100%;
+//   text-align: center;
+//   visibility: visible;
+// }
 .footer-social {
   color: white;
 }
 .footer-links {
   display: flex;
   align-items: center;
-
 }
 .footer-links a {
   color: white;
