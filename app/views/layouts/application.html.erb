@@ -20,13 +20,18 @@
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
+  <% unless action_name == "home" %>
   <%= render 'shared/navbar' %>
   <%= render 'shared/flashes' %>
+  <% end %>
   <%= yield %>
+  <% unless action_name == "home" %>
   <%= render 'shared/footer' %>
+  <% end %>
   <%= javascript_include_tag 'application'%>
   <%= javascript_pack_tag 'application'%>
   <%= javascript_pack_tag 'maps'%>
+
 </body>
 
 </html>
