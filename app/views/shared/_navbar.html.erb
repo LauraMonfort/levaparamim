@@ -3,55 +3,46 @@
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
     <i class="fas fa-dolly"></i>
   <% end %>
-
-      <%= form_tag requests_path, method: :get, class: 'form-inline' do %>
-        <%= text_field_tag :query_origin, params[:query_origin], :required => true, class: "form form-control", placeholder: "From"
-        %>
-        <%= text_field_tag :query_destination, params[:query_destination], :required => true, class: "form form-control", placeholder: "For"
-        %>
-        <%= date_field_tag :query_delivery_date, "", :required => false, class: "form form-control",
-        placeholder: "Date do you need your item to be delivered?"
-        %>
-        <%= submit_tag "Find", class: "btn btn-outline-danger" %>
-
-  <% end %>
-
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <% if user_signed_in? %>
 
-      <!-- Links when logged in -->
-      <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+   <!-- Links when logged in -->
+    <%= link_to "How it works", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Bringer", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Sender", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <div><p class="navbar-welcome">Welcome back,</p>
+      <p class="navbar-welcome-name">Laura!</p>
+    </div>
 
-      <!-- Avatar with dropdown menu -->
-      <div class="navbar-wagon-item">
-        <div class="dropdown">
-          <%= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
-              <% end %>
-            </li>
-          </ul>
-        </div>
+    <!-- Avatar with dropdown menu -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <%= image_tag "https://res.cloudinary.com/danielujikawa/image/upload/v1544456980/LauraMonfortAvatar.jpg", class: "avatar-medium dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li>
+            <%= link_to "#" do %>
+            <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#" do %>
+            <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to destroy_user_session_path, method: :delete do %>
+            <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+            <% end %>
+          </li>
+        </ul>
       </div>
+    </div>
     <% else %>
-      <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <!-- Login link (when logged out) -->
+    <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
   </div>
 

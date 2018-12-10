@@ -1,11 +1,10 @@
 .home-banner {
-  background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), asset-url('image.jpg');
+  background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), asset-url('image_cropped.jpg');
   background-size: cover;
   height: 100vh;
   color: #eee;
   text-align: center;
-  padding-top: 40vh;
-
+  padding-top: 30vh;
 }
 
 #title {
@@ -13,7 +12,7 @@
   text-shadow: 1px 1px 4px black;
   font-weight: 450;
   opacity: 0.7;
-  margin: 0 auto;
+  margin: -70px auto;
   margin-right: 40px;
 }
 
@@ -25,8 +24,12 @@
   opacity: 0.7;
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.7);
-  margin: 0px;
+  margin: 70px;
   margin-right: 30px;
+}
+
+#home-search {
+  margin: -30px;
 }
 
 .button {
