@@ -6,9 +6,9 @@ import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 const mapElement = document.getElementById('map');
 
 if (mapElement) {
-  map.addControl(new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken
-  }));
+  // map.addControl(new MapboxGeocoder({
+  //   accessToken: mapboxgl.accessToken
+  // }));
   mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
   const map = new mapboxgl.Map({
     container: 'map',
