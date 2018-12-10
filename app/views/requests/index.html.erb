@@ -1,49 +1,53 @@
+<div class="search-bar search-bar-position">
+    <%= render 'shared/search_bar' %>
+  </div>
+
 <div class="main-container">
   <div class="card-container">
     <% if @requests.any? %>
-      <% @requests.each do |request|  %>
-        <div class="flip3D">
-          <div class="front">
-            <div class="card-body">
-              <div class="card-picture" style="background: url(<%= request.image %>);">
-                <img class="card-user avatar avatar-large" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-              </div>
-              <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.origin[0..25] + '...' %></p>
-                <h2>R$ <%= request.price %></h2>
-              </div>
-              <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.destination[0..25] + '...' %></p>
-                <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
-              </div>
-            </div>
+    <% @requests.each do |request|  %>
+    <div class="flip3D">
+      <div class="front">
+        <div class="card-body">
+          <div class="card-picture" style="background: url(<%= request.image %>);">
+            <img class="card-user avatar avatar-large" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
           </div>
-          <div class="back">
-            <div class="card-body">
-              <div class="card-description-flex">
-                <h2><%= request.user.first_name %> <%= request.user.last_name %></h2>
-              </div>
-              <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.origin %></p>
-              </div>
-              <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.destination %></p>
-              </div>
-              <div class="card-description-flex">
-                <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
-              </div>
-              <div class="card-description-flex">
-                <p><%= request.comment %></p>
-              </div>
-            </div>
-            <%= link_to "Deliver it", request_bookings_path(:request_id => request.id), :method => :post,  :class => "btn btn-danger sweet-alert-booking-confirmation" %>
+          <div class="card-description-flex">
+            <p><i class="fas fa-map-marker-alt"></i> <%= request.origin[0..25] + '...' %></p>
+            <h2>R$ <%= request.price %></h2>
+          </div>
+          <div class="card-description-flex">
+            <p><i class="fas fa-map-marker-alt"></i> <%= request.destination[0..25] + '...' %></p>
+            <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
           </div>
         </div>
-      <% end %>
+      </div>
+      <div class="back">
+        <div class="card-body">
+          <div class="card-description-flex">
+            <h2><%= request.user.first_name %> <%= request.user.last_name %></h2>
+          </div>
+          <div class="card-description-flex">
+            <p><i class="fas fa-map-marker-alt"></i> <%= request.origin %></p>
+          </div>
+          <div class="card-description-flex">
+            <p><i class="fas fa-map-marker-alt"></i> <%= request.destination %></p>
+          </div>
+          <div class="card-description-flex">
+            <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
+          </div>
+          <div class="card-description-flex">
+            <p><%= request.comment %></p>
+          </div>
+        </div>
+        <%= link_to "Deliver it", request_bookings_path(:request_id => request.id), :method => :post,  :class => "btn btn-danger sweet-alert-booking-confirmation" %>
+      </div>
+    </div>
+    <% end %>
     <% else %>
-      <p>No requests found. Try again.</p>
+    <p>No requests found. Try again.</p>
     <% end %>
   </div>
-    <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-    </div>
+  <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
 </div>

@@ -36,8 +36,13 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #D23333;
-  font-size: 16px;
+  color: black;
+  font-size: 13px;
+}
+
+.navbar-wagon-link:visited {
+  color: black;
+  text-decoration: none;
 }
 .navbar-wagon-link:hover {
   color: rgb(255, 45, 83);
@@ -87,6 +92,23 @@
   border-radius: 4px;
   box-shadow: 1px 1px 2px black;
   font-size: 17px;
+  vertical-align: baseline;
 }
 
+.navbar-welcome{
+  font-size: 13px;
+  margin: 0;
+  vertical-align: baseline;
+}
 
+.navbar-welcome-name{
+  font-size: 14px;
+  margin: 0;
+  text-align: right;
+  font-weight: bold;
+  vertical-align: baseline;
+}
+
+.navbar-areas{
+  vertical-align: baseline;
+}
