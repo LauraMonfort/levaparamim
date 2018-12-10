@@ -18,11 +18,8 @@ class RequestsController < ApplicationController
         lat: request.latitude,
         infoWindow: { content: render_to_string(partial: "/requests/map_window", locals: { request: request }) }
       }
-
     end
-
   end
-
 
   def home
   end
@@ -41,7 +38,7 @@ class RequestsController < ApplicationController
     @request = Request.new(request_params)
     @request.user = current_user
     if @request.save
-      redirect_to user_request_path(current_user, @request)
+      redirect_to request_path(@request)
     else
       render 'new'
     end
@@ -54,7 +51,7 @@ class RequestsController < ApplicationController
   def update
     @request = Request.find(params[:id])
     @request.update(request_params)
-    redirect_to user_request_path(@request)
+    redirect_to request_path(@request)
   end
 
   def destroy
@@ -66,7 +63,7 @@ class RequestsController < ApplicationController
   private
 
   def request_params
-    params.require(:request).permit(:delivery_date, :origin, :destination, :size, :price, :comment, :booked, :image)
+    params.require(:request).permit(:delivery_date, :origin, :destination, :size, :price, :comment, :booked, :image, :image_cache)
   end
 
 end

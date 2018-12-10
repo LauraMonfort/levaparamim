@@ -1,24 +1,29 @@
-<%= form_for(@request) do |f| %>
+<%= simple_form_for(@request) do |f| %>
+    <div class="errors-container">
+      <ul>
+        <% @request.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
   <%= f.label :origin %>
   <%= f.text_field :origin %>
   <%= f.label :destination %>
   <%= f.text_field :destination %>
   <%= f.label :size %>
   <%= f.text_field :size %>
+<!--   <select name :size>
+    <option value="Fits in a pocket">Fits in a pocket</option>
+    <option value="Fits in a car">Fits in a car</option>
+  </select> -->
   <%= f.label :price %>
   <%= f.text_field :price %>
-  <%= f.label :comment %>
-  <%= f.text_field :comment %>
   <%= f.label :delivery_date %>
   <%= f.text_field :delivery_date %>
   <%= f.label :comment %>
   <%= f.text_field :comment %>
+  <%= f.input :image %>
+  <%= f.input :image_cache, as: :hidden %>
   <%= f.submit %>
 <% end %>
 
-<%= simple_form_for(article) do |f| %>
-  <!-- [...] -->
-  <%= f.input :image %>
-  <%= f.input :image_cache, as: :hidden %>
-  <!-- [...] -->
-<% end %>

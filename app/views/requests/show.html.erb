@@ -6,7 +6,8 @@
     <p>Price: R$<%=@request.price%></p>
     <p>Comment: <%=@request.comment%></p>
     <%= cl_image_tag @request.image, height: 300, width: 400, crop: :fill %>
-    <%= link_to "Book it", request_bookings_path(:request_id => @request.id), :method => :post,  :class => "btn btn-danger", :id => "sweet-alert-booking-confirmation" %>
+    <%= link_to "Edit", edit_request_path(:request => request), :method => :get,  :class => "btn btn-danger" %>
+    <%= link_to "Delete", request_path(:request => request), :method => :delete,  :class => "btn btn-danger" %>
 </div>
 
 <%#= render "shared/card" %>
