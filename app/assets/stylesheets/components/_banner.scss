@@ -1,7 +1,5 @@
 .home-banner {
   background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), asset-url('image.jpg');
-  background-image: -o-linear-gradient(top right, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), asset-url('image.jpg');
-  background-image: linear-gradient(to bottom left, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), asset-url('image.jpg');
   background-size: cover;
   height: 100vh;
   color: #eee;
@@ -11,10 +9,8 @@
 }
 
 #title {
-  font-family: 'Raleway', sans-serif;
   font-size: 65px;
   text-shadow: 1px 1px 4px black;
-  padding-top: 40px;
   font-weight: 450;
   opacity: 0.7;
   margin: 0 auto;
@@ -22,15 +18,15 @@
 }
 
 #subtitle {
-  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
   // text-shadow: 1px 1px 5px black;
   letter-spacing: 7px;
   font-size: 25px;
-
+  opacity: 0.7;
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.7);
   margin: 0px;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .button {
