@@ -9,11 +9,11 @@
                 <img class="card-user avatar avatar-large" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
               </div>
               <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.origin %></p>
+                <p><i class="fas fa-map-marker-alt"></i> <%= request.origin[0..25] + '...' %></p>
                 <h2>R$ <%= request.price %></h2>
               </div>
               <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.destination %></p>
+                <p><i class="fas fa-map-marker-alt"></i> <%= request.destination[0..25] + '...' %></p>
                 <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
               </div>
             </div>
