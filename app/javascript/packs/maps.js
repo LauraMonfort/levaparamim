@@ -40,7 +40,7 @@ if (markers.length === 0) {
 
 
 // const addressInput = document.getElementById('request_address');
-const addressInput = document.getElementsByClassName('form-control');
+const addressInput = document.getElementsByClassName('search-bar');
 
 if (addressInput) {
   const places = require('places.js');

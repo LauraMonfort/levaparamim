@@ -1,13 +1,13 @@
 .flip3D {
   width: 340px !important;
-  height:340px !important;
+  height:360px !important;
 }
 .flip3D > .front {
   position:absolute;
   transform: perspective( 600px ) rotateY( 0deg );
   background: white;
   width: 340px;
-  height:340px;
+  height:360px;
   border-radius: 4px;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
@@ -21,7 +21,7 @@
   transform: perspective( 600px ) rotateY( 180deg );
   background: white;
   width: 340px;
-  height:340px;
+  height:360px;
   border-radius: 4px;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
