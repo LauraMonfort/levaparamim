@@ -48,6 +48,7 @@ if (addressInput) {
     container: addressInput[1]
   });
 }
+
 if (addressInput) {
   const places = require('places.js');
   const placesAutocomplete = places({
@@ -64,6 +65,8 @@ if (addressInput) {
 //     .addTo(map);
 //   })
 // }
+
+
 
 const algolia = document.getElementsByClassName('algolia-places')
 
