@@ -6,24 +6,25 @@
         <% end %>
       </ul>
     </div>
-  <%= f.label :origin %>
-  <%= f.text_field :origin %>
-  <%= f.label :destination %>
-  <%= f.text_field :destination %>
-  <%= f.label :size %>
-  <%= f.text_field :size %>
-<!--   <select name :size>
-    <option value="Fits in a pocket">Fits in a pocket</option>
-    <option value="Fits in a car">Fits in a car</option>
-  </select> -->
-  <%= f.label :price %>
-  <%= f.text_field :price %>
-  <%= f.label :delivery_date %>
-  <%= f.text_field :delivery_date %>
-  <%= f.label :comment %>
-  <%= f.text_field :comment %>
-  <%= f.input :image %>
-  <%= f.input :image_cache, as: :hidden %>
-  <%= f.submit %>
+    <%= f.text_field :delivery_date, :required => false,
+    id: "query_delivery_date_",
+    placeholder: "Delivery date",
+    data: {
+    flatpickr_format: "Y-m-d",
+    flatpickr_min_date: Time.zone.now }
+    %>
+    <% f.label :origin %>
+    <%= f.text_field :origin, placeholder: "From" %>
+    <% f.label :destination %>
+    <%= f.text_field :destination, placeholder: "To" %>
+    <%= f.input :size, collection: ["Fits in a pocket", "Fits in a car", "Fits in a van"], :include_blank => false,:label => false, prompt: "Item size"%>
+    <% f.label :price %>
+    <%= f.text_field :price, placeholder: "Price (ex: 9)" %>
+    <%f.label :comment %>
+    <%= f.text_field :comment, placeholder: "Comment" %>
+    <% f.input :image %>
+    <%= f.input :image_cache, as: :hidden %>
+    <%= f.submit class: "btn btn-sucess"%>
 <% end %>
+
 
