@@ -9,14 +9,14 @@
           <div class="front">
             <div class="card-body-front">
               <div class="card-picture" style="background: url(<%= request.image %>);">
-                <img class="card-user avatar avatar-large" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+                <%= cl_image_tag request.user.avatar, class:"card-user avatar avatar-large" %>
               </div>
               <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.origin[0..25] + '...' %></p>
+                <p><i class="fas fa-map-marker-alt"></i> <%= request.origin_neighborhood%></p>
                 <h2>R$ <%= request.price %></h2>
               </div>
               <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.destination[0..25] + '...' %></p>
+                <p><i class="fas fa-map-marker-alt"></i> <%= request.destination_neighborhood%></p>
                 <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
               </div>
             </div>
@@ -29,21 +29,21 @@
                     <p><i class="fas fa-star fa-xs"></i></p>
                   <% end %>
                 <% else %>
-                  <p><%= "Not rated."%></p>
+                  <p><%= "Not rated yet."%></p>
                 <% end %>
               </div>
               <div class="card-description-flex">
-                <h5><%= request.user.first_name %> <%= request.user.last_name %></h5>
+                <h6><%= request.user.first_name %> <%= request.user.last_name %></h6>
                 <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
+              </div>
+              <div class="card-comment-flex">
+                <p><strong>"<%=request.comment%>"</strong></p>
               </div>
               <div class="card-description-flex">
                 <p><strong>Origin: </strong></i> <%= request.origin %></p>
               </div>
               <div class="card-description-flex">
                 <p><strong>Destination: </strong></i> <%= request.destination %></p>
-              </div>
-              <div class="card-description-flex">
-                <p><strong>Comment: </strong><%= request.comment %></p>
               </div>
               <div class="card-description-flex">
                 <% if Review.where(user_id: request.user_id).any?%>

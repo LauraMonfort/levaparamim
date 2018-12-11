@@ -49,13 +49,21 @@
 }
 .card-description-flex p {
   color: black;
-  font-size: 14px;
+  font-size: 13px;
   opacity: 0.7;
   font-weight: lighter;
   margin: 0px;
   max-width: 340px;
 }
-
+.card-comment-flex p {
+  color: black;
+  font-size: 15px;
+  opacity: 0.7;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0px;
+  max-width: 340px;
+}
 .stars {
   display: flex;
   justify-content: left;
@@ -64,3 +72,20 @@
   position: absolute;
 }
 
+.card-show {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  width: 340px;
+  height:340px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f3f3f3;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+}
+
+.card-show-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
