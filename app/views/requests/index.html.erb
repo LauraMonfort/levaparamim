@@ -1,8 +1,11 @@
-<div class="search-bar search-bar-position">
+<div class="main-container">
+
+ <div class="card_and_search">
+  <div class="search-bar">
     <%= render 'shared/search_bar' %>
   </div>
-<div class="main-container">
   <div class="card-container">
+
     <% if @requests.any? %>
       <% @requests.each do |request|  %>
         <div class="flip3D">
