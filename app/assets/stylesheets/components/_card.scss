@@ -49,13 +49,21 @@
 }
 .card-description-flex p {
   color: black;
-  font-size: 14px;
+  font-size: 13px;
   opacity: 0.7;
   font-weight: lighter;
   margin: 0px;
   max-width: 340px;
 }
-
+.card-comment-flex p {
+  color: black;
+  font-size: 15px;
+  opacity: 0.7;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0px;
+  max-width: 340px;
+}
 .stars {
   display: flex;
   justify-content: left;

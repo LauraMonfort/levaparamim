@@ -15,74 +15,100 @@ Review.destroy_all
 puts 'Creating Users...'
 users_attributes = [
   {
-    email: 'flavio123@gmail.com',
+    email: 'claudio123@gmail.com',
     password: '123456',
-    # username: 'Flavio',
-    first_name: 'Flavio',
-    last_name: 'Souza'
+    # username: 'claudiovicter',
+    first_name: 'Claudio',
+    last_name: 'Victer',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/man5.jpg"
   },
   {
     email: 'rodrigo123@gmail.com',
     password: '123456',
     # username: 'Rodrigo123',
     first_name: 'Rodrigo',
-    last_name: 'Pereira'
+    last_name: 'Assuf',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/man3.jpg"
   },
   {
     email: 'ricardo@gmail.com',
     password: '123456',
-    # username: 'Ricardo',
+    # username: 'ricardotognola',
     first_name: 'Ricardo',
-    last_name: 'dos Santos'
+    last_name: 'Tognola',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/man4.jpg"
   },
   {
     email: 'flavia@msn.com',
     password: '123456',
     # username: 'Flavinha',
     first_name: 'Flavia',
-    last_name: 'da Silva'
+    last_name: 'da Silva',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544271/Avatars/woman4.jpg"
   },
   {
-    email: 'olivia@sfr.com',
+    email: 'milicardo@sfr.com',
     password: '123456',
-    # username: 'Olivia-Linda',
-    first_name: 'Olivia',
-    last_name: 'Linda'
+    # username: 'milicardo',
+    first_name: 'Milene',
+    last_name: 'Cardoso',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544273/Avatars/woman7.jpg"
   },
   {
     email: 'Alexia@aol.com',
     password: '123456',
     # username: 'Alexia',
-    first_name: 'Alexia',
-    last_name: 'Macedo'
+    first_name: 'Alexandra',
+    last_name: 'Macedo',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/woman3.jpg"
   },
   {
     email: 'marcelo.freitas@gmail.com',
     password: '123456',
     # username: 'marfreitas',
-    first_name: 'Marcelo',
-    last_name: 'Freitas'
+    first_name: 'Josy',
+    last_name: 'Freitas',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544273/Avatars/woman6.jpg"
   },
   {
     email: 'camila.gois@aol.com',
     password: '123456',
     # username: 'Camygois',
     first_name: 'Camila',
-    last_name: 'Gois'
+    last_name: 'Gois',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544273/Avatars/woman5.jpg"
   },
   {
     email: 'larissa.dolores@gmail.com',
     password: '123456',
     # username: 'Laridor',
     first_name: 'Larissa',
-    last_name: 'Dolores'
+    last_name: 'Dolores',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/woman2.jpg"
   },
   {
-    email: 'joao.queiroz@aol.com',
+    email: 'justin.holt@aol.com',
     password: '123456',
-    # username: 'queirozjoao',
-    first_name: 'Joao',
-    last_name: 'Queiroz'
+    # username: 'dholt',
+    first_name: 'Justin',
+    last_name: 'Holt',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/man1.jpg"
+  },
+  {
+    email: 'policruz@gmail.com',
+    password: '123456',
+    # username: 'pcruz',
+    first_name: 'Poliana',
+    last_name: 'Cruz',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/woman1.jpg"
+  },
+  {
+    email: 'renatopeixoto@gmail.com',
+    password: '123456',
+    # username: 'renatopeixoto',
+    first_name: 'Renato',
+    last_name: 'Peixoto',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/man2.jpg"
   }
 ]
 
@@ -94,95 +120,136 @@ puts 'Finished user!'
 puts 'Creating requests...'
 requests_attributes = [
   {
-    delivery_date: '09/12/2018',
+    delivery_date: '15/12/2018',
     origin: 'Avenida Paulista, 2300 - São Paulo, Brazil',
     destination: 'Rua Aprazivel, 18 - Rio de Janeiro, Brazil',
-    size: 'Fits in a bag',
-    price: '20',
-    comment: "Have an important document to be delivered in Rio by tomorrow. Anybody up for it?",
-    user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/envelope.jpg"
-
+    size: 'Fits in a big car',
+    price: '40',
+    comment: "Forgot my fave guitar in São Paulo and need it for a concert tomorrow. Anybody up for it?",
+    user: User.where(first_name: 'Renato').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545569/Objects/violao.jpg",
+    origin_neighborhood: "São Paulo - Bela Vista",
+    destination_neighborhood: "Rio de Janeiro - Santa Teresa"
   },
   {
-    delivery_date: '09/12/2018',
+    delivery_date: '15/12/2018',
     origin: 'Rua Henrique Schaumann, 678 - São Paulo, Brazil',
     destination: 'Rua do Catete, 18 - Rio de Janeiro, Brazil',
-    size: 'Fits in a car',
-    price: '40',
-    comment: "Need to deliver a medium-size box with a bunch of stuff. Anybody going there by car?",
-    user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/medium_box_stuff.jpg"
+    size: 'Fits in a bag',
+    price: '30',
+    comment: "Got this teddy bear for my daughter, but forgot it there. Anyone care to bring it?",
+    user: User.where(first_name: 'Poliana').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544554608/Objects/Cute-Teddy-Bear-Brogan.jpg",
+    origin_neighborhood: "São Paulo - Pinheiros",
+    destination_neighborhood: "Rio de Janeiro - Catete"
   },
   {
-    delivery_date: '09/12/2018',
+    delivery_date: '15/12/2018',
     origin: 'Rua Purpurina, 230 - São Paulo, Brazil',
     destination: 'Rua Visconde de Piraja, 38 - Rio de Janeiro, Brazil',
-    size: 'Fits in a van',
+    size: 'Fits in a car',
     price: "60",
-    comment: "Is anyone going to Rio this date with a lot of free space? Have a small chair that I need to drop off there.",
-    user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/fugly_chair.jpg"
+    comment: "My friend gave me this carrier for my cat. Could you bring it to me before we travel on Monday?",
+    user: User.where(first_name: 'Larissa').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545566/Objects/gaiola_pet.jpg",
+    origin_neighborhood: "São Paulo - Vila Madalena",
+    destination_neighborhood: "Rio de Janeiro - Ipanema"
   },
   {
-    delivery_date: '09/12/2018',
+    delivery_date: '15/12/2018',
     origin: 'Rua dos Pinheiros, 325 - São Paulo, Brazil',
     destination: 'Avenida Nossa Senhora, 56 - Rio de Janeiro, Brazil',
-    size: 'Fits in a big car',
-    price: "55",
-    comment: "Have big lugagge to take to Rio, could fit in a big trunk. Anyone with free space in for some bucks?",
-    user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/overloaded-suitcase.jpg"
+    size: 'Fits in a bag',
+    price: "20",
+    comment: "Need this desperately! My son won't bath without this, and he won't stop crying. Anyone can relate and bring it to me, please? ",
+    user: User.where(first_name: 'Camila').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545566/Objects/patinho_amarelo.jpg",
+    origin_neighborhood: "São Paulo - Alto de Pinheiros",
+    destination_neighborhood: "Rio de Janeiro - Copacabana"
   },
   {
-    delivery_date: '09/12/2018',
+    delivery_date: '15/12/2018',
     origin: 'Rua Augusta, 2134 - São Paulo, Brazil',
-    destination: 'Avenida do Maracana, 81 - Rio de Janeiro, Brazil',
+    destination: 'Rua Conde de Bonfim, 615 - Rio de Janeiro, Brazil',
     size: 'Fits in a pocket',
     price: "20",
-    comment: "Can anyone bring me the keys I forgot? I need then asap. Anyone willing to help for some cash???",
-    user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/giant_haunted_key.jpg"
+    comment: "Can anyone bring me the keys I forgot? I need then asap. Anyone willing to help for some easy cash???",
+    user: User.where(first_name: 'Justin').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545565/Objects/chaves_carro.jpg",
+    origin_neighborhood: "São Paulo - Vila Buarque",
+    destination_neighborhood: "Rio de Janeiro - Tijuca"
   },
   {
-    delivery_date: '09/12/2018',
+    delivery_date: '15/12/2018',
     origin: 'Rua Barata Ribeiro, 449 - Rio de Janeiro, Brazil',
-    destination: 'Avenida da Consolaçao, 39 - São Paulo, Brazil',
-    size: 'Fits in a bag',
-    price: '35',
-    comment: "Forgot to bring a jacket and trousers to São Paulo. Could you slip in you bag when coming to São Paulo?",
-    user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/folded_jacket.jpg"
-  },
-  {
-    delivery_date: '09/12/2018',
-    origin: 'Ladeira da Gloria, 26 - Rio de Janeiro, Brazil',
-    destination: 'Rua Alfonso Bovero, 23 - São Paulo, Brazil',
-    size: 'Fits in a car',
-    price: "40",
-    comment: "Forgot my folder in Rio, anyone coming to São Paulo that could bring me?",
-    user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544206219/fugly_folder.jpg"
-  },
-  {
-    delivery_date: '09/12/2018',
-    origin: 'Rua Leblon, 11 - Rio de Janeiro, Brazil',
-    destination: 'Rua Capote Valente, 90 - São Paulo, Brazil',
-    size: 'Fits in a car',
-    price: "35",
-    comment: "Coming to São Paulo tonight? Could you bring me a small bag?",
-    user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031267/small_bag.jpg"
-  },
-  {
-    delivery_date: '09/12/2018',
-    origin: 'Avenida Atlantica, 908 - Rio de Janeiro, Brazil',
-    destination: 'Avenida Jabaquara, 588 - São Paulo, Brazil',
+    destination: 'Avenida da Consolação, 39 - São Paulo, Brazil',
     size: 'Fits in a van',
-    price: "60",
-    comment: "Need to bring a small table to Rio. Could you fit it in your",
-    user: users.sample,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544031266/small_table.jpg"
+    price: '70',
+    comment: "Got this from a friend, but need to have it delivered to me. It's small enough to fit in a van.",
+    user: User.where(first_name: 'Josy').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545566/Objects/mesa_cabecira.jpg",
+    origin_neighborhood: "Rio de Janeiro - Copacabana",
+    destination_neighborhood: "São Paulo - Consolação"
+  },
+  {
+    delivery_date: '15/12/2018',
+    origin: 'Ladeira da Glória, 26 - Rio de Janeiro, Brazil',
+    destination: 'Rua Alfonso Bovero, 23 - São Paulo, Brazil',
+    size: 'Fits in a bag',
+    price: "30",
+    comment: "School is back next week, and need this backpack for my son. Anyonre care to bring it?",
+    user: User.where(first_name: 'Alexandra').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545566/Objects/mochila.jpg",
+    origin_neighborhood: "Rio de Janeiro - Glória",
+    destination_neighborhood: "São Paulo - Sumaré"
+  },
+  {
+    delivery_date: '15/12/2018',
+    origin: 'Rua Leblon, 11 - Rio de Janeiro, Brazil',
+    destination: 'Rua Rio Grande, 455 - São Paulo, Brazil',
+    size: 'Fits in a car',
+    price: "50",
+    comment: "Coming to São Paulo tonight? Could you bring me a kid's bicycle?",
+    user: User.where(first_name: 'Flavia').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545565/Objects/bicicleta_infantil.jpg",
+    origin_neighborhood: "Rio de Janeiro - Leblon",
+    destination_neighborhood: "São Paulo - Vila Mariana"
+  },
+  {
+    delivery_date: '15/12/2018',
+    origin: 'Rua São Clemente, 32 - Rio de Janeiro, Brazil',
+    destination: 'Av. Pacaembu, 746 - São Paulo, Brazil',
+    size: 'Fits in a bag',
+    price: "10",
+    comment: "Miss my favorite local snack. Can anyone bring it to me?",
+    user: User.where(first_name: 'Ricardo').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545565/Objects/biscoito_globo.jpg",
+    origin_neighborhood: "Rio de Janeiro - Botafogo",
+    destination_neighborhood: "São Paulo - Pacaembu"
+  },
+  {
+    delivery_date: '15/12/2018',
+    origin: 'Avenida Maracanã, 592 - Rio de Janeiro, Brazil',
+    destination: 'Avenida Jabaquara, 588 - São Paulo, Brazil',
+    size: 'Fits in a bag',
+    price: "20",
+    comment: "Forgot my lucky soccer ball in Rio. Could you bring it to me before the game?",
+    user: User.where(first_name: 'Claudio').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545565/Objects/bola_futebol.jpg",
+    origin_neighborhood: "Rio de Janeiro - Maracanã",
+    destination_neighborhood: "São Paulo - Jabaquara"
+  },
+  {
+    delivery_date: '15/12/2018',
+    origin: 'Rua Marquês de Abrantes, 35 - Rio de Janeiro, Brazil',
+    destination: 'Rua Oscar Freire, 454 - São Paulo, Brazil',
+    size: 'Fits in a bag',
+    price: "20",
+    comment: "Borrowed these from my sister without telling her and forgot it in Rio. Can anyone bring it to me before she kills me??",
+    user: User.where(first_name: 'Milene').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544545565/Objects/oculos_escuros.jpg",
+    origin_neighborhood: "Rio de Janeiro - Flamengo",
+    destination_neighborhood: "São Paulo - Jardins"
   }
 ]
 
@@ -244,7 +311,7 @@ reviews_attributes = [
     user: users.sample,
     booking: Booking.all.sample
   },
-   {
+  {
     content: 'Made me wait 50min longer than we accorded and did not even apologize. Would think twice before choosing him.',
     rating: 1,
     review_type: 'sender',
