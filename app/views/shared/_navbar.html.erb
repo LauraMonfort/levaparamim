@@ -1,17 +1,18 @@
 <div class="navbar-wagon navbar-fixed-top">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <i class="fas fa-dolly"></i>
+  <i class="fas fa-dolly"></i>
   <% end %>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-    <%# if user_signed_in? %>
-
-   <!-- Links when logged in -->
     <%= link_to "How it works", "#how-it-works", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Deliver something", "root_path", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Delivery request", "new_requests_path", class: "navbar-wagon-item navbar-wagon-link" %>
+
+    <% if user_signed_in? %>
+
+    <!-- Links when logged in -->
+    <%= link_to "How it works", "#how-it-works", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Deliver something", root_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Delivery request", new_request_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
     <div><p class="navbar-welcome-name">Laura</p></div>
 
@@ -38,10 +39,10 @@
         </ul>
       </div>
     </div>
-    <%# else %>
+    <% else %>
     <!-- Login link (when logged out) -->
-    <%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <%# end %>
+    <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <% end %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->

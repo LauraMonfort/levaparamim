@@ -16,38 +16,38 @@
     <div class="front card-show">
       <div class="card-body-front">
         <div class="card-picture" style="background: url(<%= @request.image %>);">
-          <img class="card-user avatar avatar-large" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        </div>
-        <div class="card-description-flex">
-          <p><i class="fas fa-map-marker-alt"></i> <%= @request.origin[0..25] + '...' %></p>
-          <h2>R$ <%= @request.price %></h2>
-        </div>
-        <div class="card-description-flex">
-          <p><i class="fas fa-map-marker-alt"></i> <%= @request.destination[0..25] + '...' %></p>
-          <p><i class="far fa-calendar-alt"></i> <%= @request.delivery_date.strftime("%d/%m/%y")%></p>
-        </div>
+          <%= cl_image_tag @request.user.avatar, class:"card-user avatar avatar-large" %>
+       </div>
+       <div class="card-description-flex">
+        <p><i class="fas fa-map-marker-alt"></i> <%= @request.origin[0..25] + '...' %></p>
+        <h2>R$ <%= @request.price %></h2>
+      </div>
+      <div class="card-description-flex">
+        <p><i class="fas fa-map-marker-alt"></i> <%= @request.destination[0..25] + '...' %></p>
+        <p><i class="far fa-calendar-alt"></i> <%= @request.delivery_date.strftime("%d/%m/%y")%></p>
       </div>
     </div>
-
-    <div class="back card-show">
-      <div class="card-body-back">
-        <div class="card-description-flex">
-          <h5><%= @request.user.first_name %> <%= @request.user.last_name %></h5>
-          <p><i class="far fa-calendar-alt"></i> <%= @request.delivery_date.strftime("%d/%m/%y")%></p>
-        </div>
-        <div class="card-description-flex">
-          <p><strong>Origin: </strong></i> <%= @request.origin %></p>
-        </div>
-        <div class="card-description-flex">
-          <p><strong>Destination: </strong></i> <%= @request.destination %></p>
-        </div>
-        <div class="card-description-flex">
-          <p><strong>Comment: </strong><%= @request.comment %></p>
-        </div>
-      </div>
-    </div>
-
   </div>
+
+  <div class="back card-show">
+    <div class="card-body-back">
+      <div class="card-description-flex">
+        <h5><%= @request.user.first_name %> <%= @request.user.last_name %></h5>
+        <p><i class="far fa-calendar-alt"></i> <%= @request.delivery_date.strftime("%d/%m/%y")%></p>
+      </div>
+      <div class="card-description-flex">
+        <p><strong>Origin: </strong></i> <%= @request.origin %></p>
+      </div>
+      <div class="card-description-flex">
+        <p><strong>Destination: </strong></i> <%= @request.destination %></p>
+      </div>
+      <div class="card-description-flex">
+        <p><strong>Comment: </strong><%= @request.comment %></p>
+      </div>
+    </div>
+  </div>
+
+</div>
 </div>
 
 <%= link_to "Edit", edit_request_path(:request => @request), :method => :get,  :class => "btn btn-danger" %>

@@ -1,73 +1,76 @@
 <div class="main-container">
 
  <div class="card_and_search">
-  <div class="search-bar">
+  <div class="">
     <%= render 'shared/search_bar' %>
   </div>
   <div class="card-container">
 
     <% if @requests.any? %>
-      <% @requests.each do |request|  %>
-        <div class="flip3D">
-          <div class="front">
-            <div class="card-body-front">
-              <div class="card-picture" style="background: url(<%= request.image %>);">
-                <%= cl_image_tag request.user.avatar, class:"card-user avatar avatar-large" %>
-              </div>
-              <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.origin_neighborhood%></p>
-                <h2>R$ <%= request.price %></h2>
-              </div>
-              <div class="card-description-flex">
-                <p><i class="fas fa-map-marker-alt"></i> <%= request.destination_neighborhood%></p>
-                <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
-              </div>
-            </div>
+    <% @requests.each do |request|  %>
+    <div class="flip3D">
+      <div class="front">
+        <div class="card-body-front">
+          <div class="card-picture" style="background: url(<%= request.image %>);">
+            <%= cl_image_tag request.user.avatar, class:"card-user avatar avatar-large" %>
           </div>
-          <div class="back">
-            <div class="card-body-back">
-              <div class="stars">
-                <% if Review.where(user_id: request.user_id).any? %>
-                  <% Review.where(user_id: request.user_id).average(:rating).to_i.times do %>
-                    <p><i class="fas fa-star fa-xs"></i></p>
-                  <% end %>
-                <% else %>
-                  <p><%= "Not rated yet."%></p>
-                <% end %>
-              </div>
-              <div class="card-description-flex">
-                <h6><%= request.user.first_name %> <%= request.user.last_name %></h6>
-                <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
-              </div>
-              <div class="card-comment-flex">
-                <p><strong>"<%=request.comment%>"</strong></p>
-              </div>
-              <div class="card-description-flex">
-                <p><strong>Origin: </strong></i> <%= request.origin %></p>
-              </div>
-              <div class="card-description-flex">
-                <p><strong>Destination: </strong></i> <%= request.destination %></p>
-              </div>
-              <div class="card-description-flex">
-                <% if Review.where(user_id: request.user_id).any?%>
-                  <p><strong>Last review: </strong><%= Review.where(user_id: request.user_id).last.content %></p>
-                <% else %>
-                  <p><%= "No reviews."%></p>
-                <% end %>
-              </div>
-            </div>
-            <div class="button-deliver">
-            <%= link_to "Deliver it", request_bookings_path(:request_id => request.id), :method => :post,  :class => "btn btn-danger btn-xs sweet-alert-booking-confirmation" %>
-            </div>
+          <br>
+          <div class="card-description-flex">
+            <p><i class="fas fa-map-marker-alt"></i> <%= request.origin_neighborhood%></p>
+            <h2>R$ <%= request.price %></h2>
+          </div>
+          <div class="card-description-flex">
+            <p><i class="fas fa-map-marker-alt"></i> <%= request.destination_neighborhood%></p>
+            <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
           </div>
         </div>
-      <% end %>
+      </div>
+      <div class="back">
+        <div class="card-body-back">
+          <div class="stars">
+            <% if Review.where(user_id: request.user_id).any? %>
+            <% Review.where(user_id: request.user_id).average(:rating).to_i.times do %>
+            <p><i class="fas fa-star fa-xs"></i></p>
+            <% end %>
+            <% else %>
+            <p><%= "Not rated."%></p>
+            <% end %>
+          </div>
+          <div class="card-description-flex">
+            <h5><%= request.user.first_name %> <%= request.user.last_name %></h5>
+            <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%></p>
+          </div>
+          <div class="card-comment-flex">
+              <p><strong>"<%= request.comment %>"</strong></p>
+            </div>
+          <div class="card-description-flex">
+            <p><strong>Origin: </strong></i> <%= request.origin %></p>
+          </div>
+          <div class="card-description-flex">
+            <p><strong>Destination: </strong></i> <%= request.destination %></p>
+          </div>
+          <div class="card-description-flex">
+            <% if Review.where(user_id: request.user_id).any?%>
+            <p><strong>Last review: </strong><%= Review.where(user_id: request.user_id).last.content %></p>
+            <% else %>
+            <p><%= "No reviews."%></p>
+            <% end %>
+          </div>
+        </div>
+        <div class="button-deliver">
+          <%= link_to "Deliver it", request_bookings_path(:request_id => request.id), :method => :post,  :class => "btn btn-danger btn-xs sweet-alert-booking-confirmation" %>
+        </div>
+      </div>
+    </div>
+    <% end %>
     <% else %>
-      <p>No requests found. Try again.</p>
+    <p>No requests found. Try again.</p>
     <% end %>
   </div>
-    <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-    </div>
 
 </div>
+<div id="map" data-markers="<%= @markers.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+</div>
 
+</div>
