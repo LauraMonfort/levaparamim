@@ -1,8 +1,9 @@
 #request_size {
-  width: auto;
+  width: 225px;
   height: 32px;
   padding: 0px 0px;
   color: #747474;
+  text-align: center;
 }
 
 
@@ -15,6 +16,11 @@ input[type=submit] {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
-label {
 
+
+button, input, optgroup, select, textarea {
+  color: black;
+}
+.container {
+ width: none;
 }
