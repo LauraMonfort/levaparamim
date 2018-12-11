@@ -95,8 +95,8 @@ puts 'Creating requests...'
 requests_attributes = [
   {
     delivery_date: '09/12/2018',
-    origin: 'Avenida Paulista, 2300 - São Paulo, Brazil',
-    destination: 'Rua Aprazivel, 18 - Rio de Janeiro, Brazil',
+    origin: 'Avenida Paulista, 2300 - São Paulo, Brasil',
+    destination: 'Rua Aprazivel, 18 - Rio de Janeiro, Brasil',
     size: 'Fits in a bag',
     price: '20',
     comment: "Have an important document to be delivered in Rio by tomorrow. Anybody up for it?",
@@ -106,8 +106,8 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Henrique Schaumann, 678 - São Paulo, Brazil',
-    destination: 'Rua do Catete, 18 - Rio de Janeiro, Brazil',
+    origin: 'Rua Henrique Schaumann, 678 - São Paulo, Brasil',
+    destination: 'Rua do Catete, 18 - Rio de Janeiro, Brasil',
     size: 'Fits in a car',
     price: '40',
     comment: "Need to deliver a medium-size box with a bunch of stuff. Anybody going there by car?",
@@ -116,8 +116,8 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Purpurina, 230 - São Paulo, Brazil',
-    destination: 'Rua Visconde de Piraja, 38 - Rio de Janeiro, Brazil',
+    origin: 'Rua Purpurina, 230 - São Paulo, Brasil',
+    destination: 'Rua Visconde de Piraja, 38 - Rio de Janeiro, Brasil',
     size: 'Fits in a van',
     price: "60",
     comment: "Is anyone going to Rio this date with a lot of free space? Have a small chair that I need to drop off there.",
@@ -126,8 +126,8 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua dos Pinheiros, 325 - São Paulo, Brazil',
-    destination: 'Avenida Nossa Senhora, 56 - Rio de Janeiro, Brazil',
+    origin: 'Rua dos Pinheiros, 325 - São Paulo, Brasil',
+    destination: 'Avenida Nossa Senhora, 56 - Rio de Janeiro, Brasil',
     size: 'Fits in a big car',
     price: "55",
     comment: "Have big lugagge to take to Rio, could fit in a big trunk. Anyone with free space in for some bucks?",
@@ -136,8 +136,8 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Augusta, 2134 - São Paulo, Brazil',
-    destination: 'Avenida do Maracana, 81 - Rio de Janeiro, Brazil',
+    origin: 'Rua Augusta, 2134 - São Paulo, Brasil',
+    destination: 'Avenida do Maracana, 81 - Rio de Janeiro, Brasil',
     size: 'Fits in a pocket',
     price: "20",
     comment: "Can anyone bring me the keys I forgot? I need then asap. Anyone willing to help for some cash???",
@@ -146,8 +146,8 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Barata Ribeiro, 449 - Rio de Janeiro, Brazil',
-    destination: 'Avenida da Consolaçao, 39 - São Paulo, Brazil',
+    origin: 'Rua Barata Ribeiro, 449 - Rio de Janeiro, Brasil',
+    destination: 'Avenida da Consolaçao, 39 - São Paulo, Brasil',
     size: 'Fits in a bag',
     price: '35',
     comment: "Forgot to bring a jacket and trousers to São Paulo. Could you slip in you bag when coming to São Paulo?",
@@ -156,8 +156,8 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Ladeira da Gloria, 26 - Rio de Janeiro, Brazil',
-    destination: 'Rua Alfonso Bovero, 23 - São Paulo, Brazil',
+    origin: 'Ladeira da Gloria, 26 - Rio de Janeiro, Brasil',
+    destination: 'Rua Alfonso Bovero, 23 - São Paulo, Brasil',
     size: 'Fits in a car',
     price: "40",
     comment: "Forgot my folder in Rio, anyone coming to São Paulo that could bring me?",
@@ -166,8 +166,8 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Rua Leblon, 11 - Rio de Janeiro, Brazil',
-    destination: 'Rua Capote Valente, 90 - São Paulo, Brazil',
+    origin: 'Rua Leblon, 11 - Rio de Janeiro, Brasil',
+    destination: 'Rua Capote Valente, 90 - São Paulo, Brasil',
     size: 'Fits in a car',
     price: "35",
     comment: "Coming to São Paulo tonight? Could you bring me a small bag?",
@@ -176,8 +176,8 @@ requests_attributes = [
   },
   {
     delivery_date: '09/12/2018',
-    origin: 'Avenida Atlantica, 908 - Rio de Janeiro, Brazil',
-    destination: 'Avenida Jabaquara, 588 - São Paulo, Brazil',
+    origin: 'Avenida Atlantica, 908 - Rio de Janeiro, Brasil',
+    destination: 'Avenida Jabaquara, 588 - São Paulo, Brasil',
     size: 'Fits in a van',
     price: "60",
     comment: "Need to bring a small table to Rio. Could you fit it in your",
