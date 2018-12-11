@@ -1,8 +1,18 @@
-  .search-bar{
+.search-bar {
+  height: 10px;
   font-size: 15px;
-  }
+  margin: 0 auto;
+  height: 30px;
+}
 
-  .search-bar-position{
-  margin-top: 10px;
-  position: center;
-  }
+.ap-input-icon {
+  right: 7px;
+}
+
+.ap-icon-pin {
+  right: 7px;
+}
+
+#query_delivery_date_ {
+  background-color: white;
+}
