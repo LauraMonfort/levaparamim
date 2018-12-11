@@ -6,7 +6,7 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <% if user_signed_in? %>
+    <%# if user_signed_in? %>
 
    <!-- Links when logged in -->
     <%= link_to "How it works", "#how-it-works", class: "navbar-wagon-item navbar-wagon-link" %>
@@ -38,10 +38,10 @@
         </ul>
       </div>
     </div>
-    <% else %>
+    <%# else %>
     <!-- Login link (when logged out) -->
-    <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <% end %>
+    <%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%# end %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
