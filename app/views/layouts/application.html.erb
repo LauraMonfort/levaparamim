@@ -28,14 +28,15 @@
   <%= stylesheet_pack_tag 'application', media: 'all' %>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
 </head>
-<body>
+<body id="body">
   <% # if action_name == "home" %>
   <%= render 'shared/navbar' %>
   <% #else %>
   <%= render 'shared/navbar' %>
   <%= render 'shared/flashes' %>
   <% #end %>
-  <%= yield %>
+  <div id="wrap">
+  <%= yield %></div>
   <% #unless action_name == "home" %>
   <%= render 'shared/footer' %>
   <% # end %>

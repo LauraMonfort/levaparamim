@@ -1,28 +1,52 @@
+
 <%= simple_form_for(@request) do |f| %>
-    <div class="errors-container">
-      <ul>
-        <% @request.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-    <%= f.text_field :delivery_date, :required => false,
-    id: "query_delivery_date_",
-    placeholder: "Delivery date",
+  <div class="errors-container">
+    <ul>
+      <% @request.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div>
+  <%= f.input :delivery_date, :required => false,
+  as: :string,
+  label: false,
+  id: "query_delivery_date_",
+  placeholder: "Delivery date",
+  input_html: {
+    class: 'flatpickr-field',
     data: {
-    flatpickr_format: "Y-m-d",
-    flatpickr_min_date: Time.zone.now }
-    %>
-    <% f.label :origin %>
-    <%= f.text_field :origin, placeholder: "From" %>
+      flatpickr_format: "Y-m-d",
+      flatpickr_min_date: Time.zone.now
+    }
+  }
+  %>
+  </div>
+
+  <div>
+  <% f.label :origin %>
+  <%= f.input :origin, label: false, placeholder: "From" %>
+  </div>
+
+  <div>
     <% f.label :destination %>
-    <%= f.text_field :destination, placeholder: "To" %>
-    <%= f.input :size, collection: ["Fits in a pocket", "Fits in a car", "Fits in a van"], :include_blank => false,:label => false, prompt: "Item size"%>
-    <% f.label :price %>
-    <%= f.text_field :price, placeholder: "Price (ex: 9)" %>
-    <%f.label :comment %>
-    <%= f.text_field :comment, placeholder: "Comment" %>
-    <%= f.input :image, :label => false %>
-    <%= f.input :image_cache, as: :hidden %>
-    <%= f.submit class: "btn btn-sucess"%>
+    <%= f.input :destination, label: false, placeholder: "To" %>
+  </div>
+
+  <div>
+  <%= f.input :size, collection: ["Fits in a pocket", "Fits in a car", "Fits in a van"], :include_blank => false, label: false, prompt: "Item size"%>
+  </div>
+
+
+  <% f.label :price %>
+  <%= f.input :price, label: false, placeholder: "Price (ex: 9)" %>
+
+  <%f.label :comment %>
+  <%= f.input :comment, label: false, placeholder: "Comment" %>
+
+  <%= f.input :image, :label => false %>
+  <%= f.input :image_cache, as: :hidden %>
+
+  <%= f.submit class: "btn btn-sucess"%>
 <% end %>

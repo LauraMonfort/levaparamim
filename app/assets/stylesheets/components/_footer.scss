@@ -1,3 +1,13 @@
+#body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#wrap {
+  flex: 1;
+}
+
 .footer {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: white;
@@ -5,18 +15,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px;
-
-
-// for fixed the footer at the bottom of the page
-  //bottom: 0px;
-  //height: 30px;
-  //right: 0%;
-  //left: 0%;
-  //position: fixed!important;
-  //position: absolute;
-  //width: 100%;
-  //text-align: center;
-  //visibility: visible;
+  width: 100%;
+  // position: absolute;
+  bottom: 0px;
 }
 .footer-social {
   color: gray;
@@ -38,3 +39,5 @@
 .footer .fa-heart {
   color: #D23333;
 }
+
+

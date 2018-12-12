@@ -8,6 +8,7 @@
   <p>Comment: <%=@request.comment%></p>
   <%= cl_image_tag @request.image, height: 300, width: 400, crop: :fill %>
 </div> -->
+
 <p style="padding-left: 280px"><strong>Your request details</strong></p>
 
 <div class="card-show-container">
@@ -17,6 +18,7 @@
         <div class="card-picture" style="background: url(<%= @request.image %>);">
           <%= cl_image_tag @request.user.avatar, class:"card-user avatar avatar-large" %>
        </div>
+        <p class="card-size-flex"><strong><%= @request.size%></strong></p>
        <div class="card-description-flex">
         <p><i class="fas fa-map-marker-alt"></i> <%= @request.origin_neighborhood%></p>
         <h2>R$ <%= @request.price %></h2>
@@ -51,6 +53,7 @@
     </div>
   </div>
 </div>
+
 <br>
 <div style="padding-left: 280px" class="btn-show">
 <%= link_to "Edit", edit_request_path(:request => @request), :method => :get,  :class => "btn btn-danger" %>
