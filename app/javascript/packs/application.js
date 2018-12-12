@@ -12,3 +12,4 @@ bindSweetAlertButtonBookingConfirmation();
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.css";
 flatpickr("#query_delivery_date_");
+flatpickr(".flatpickr-field");
