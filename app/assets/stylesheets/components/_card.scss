@@ -58,7 +58,7 @@
 .card-description-flex h2 {
   color: #C22F2F;
   font-size: 24px;
-  margin:0px;
+  margin:-5px;
 }
 .card-description-flex p {
   color: black;
@@ -66,6 +66,11 @@
   opacity: 0.7;
   margin: 0px;
   max-width: 360px;
+}
+.card-size-flex {
+  color: #C22F2F;
+  font-size: 15px;
+  margin:0px;
 }
 .card-comment-flex p {
   color: black;
@@ -90,21 +95,21 @@ font-weight: bold;
 }
 
 .card-show {
-  display: flex;
-  justify-content: space-around;
+  display: inline-block;
   background: white;
-  width: 340px;
+  width: 400px;
   height:340px;
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 1px;
   border-color: #f3f3f3;
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
 }
 
 .card-show-container {
-  max-width: 1400px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.margin {
+
+  margin-left:70px ;
 }
 
 .card-show-bookings {

@@ -8,49 +8,59 @@
   <p>Comment: <%=@request.comment%></p>
   <%= cl_image_tag @request.image, height: 300, width: 400, crop: :fill %>
 </div> -->
-<p><strong>Your request details</strong></p>
+
+<p style="padding-left: 280px"><strong>Your request details</strong></p>
 
 <div class="card-show-container">
-  <div class="card-container">
 
     <div class="front card-show">
       <div class="card-body-front">
         <div class="card-picture" style="background: url(<%= @request.image %>);">
           <%= cl_image_tag @request.user.avatar, class:"card-user avatar avatar-large" %>
        </div>
+        <p class="card-size-flex"><strong><%= @request.size%></strong></p>
        <div class="card-description-flex">
-        <p><i class="fas fa-map-marker-alt"></i> <%= @request.origin[0..25] + '...' %></p>
+        <p><i class="fas fa-map-marker-alt"></i> <%= @request.origin_neighborhood%></p>
         <h2>R$ <%= @request.price %></h2>
       </div>
       <div class="card-description-flex">
-        <p><i class="fas fa-map-marker-alt"></i> <%= @request.destination[0..25] + '...' %></p>
+        <p><i class="fas fa-map-marker-alt"></i> <%= @request.destination_neighborhood%></p>
         <p><i class="far fa-calendar-alt"></i> <%= @request.delivery_date.strftime("%d/%m/%y")%></p>
       </div>
     </div>
   </div>
-
   <div class="back card-show">
     <div class="card-body-back">
-      <div class="card-description-flex">
-        <h5><%= @request.user.first_name %> <%= @request.user.last_name %></h5>
-        <p><i class="far fa-calendar-alt"></i> <%= @request.delivery_date.strftime("%d/%m/%y")%></p>
-      </div>
-      <div class="card-description-flex">
-        <p><strong>Origin: </strong></i> <%= @request.origin %></p>
-      </div>
-      <div class="card-description-flex">
-        <p><strong>Destination: </strong></i> <%= @request.destination %></p>
-      </div>
-      <div class="card-description-flex">
-        <p><strong>Comment: </strong><%= @request.comment %></p>
-      </div>
+          <div class="card-description-flex">
+            <h5><%= @request.user.first_name %> <%= @request.user.last_name %></h5>
+          </div>
+          <div class="card-comment-flex">
+              <p><strong>"<%= @request.comment %>"</strong></p>
+            </div>
+          <div class="card-description-flex">
+            <p><strong>Origin: </strong></i> <%= @request.origin %></p>
+          </div>
+          <div class="card-description-flex">
+            <p><strong>Destination: </strong></i> <%= @request.destination %></p>
+          </div>
+          <div class="card-description-flex">
+            <% if Review.where(user_id: @request.user_id).any?%>
+            <p><strong>Last review: </strong><%= Review.where(user_id: @request.user_id).last.content %></p>
+            <% else %>
+            <p><%= "No reviews."%></p>
+            <% end %>
+          </div>
     </div>
   </div>
-
-</div>
 </div>
 
+<br>
+<div style="padding-left: 280px" class="btn-show">
 <%= link_to "Edit", edit_request_path(:request => @request), :method => :get,  :class => "btn btn-danger" %>
-<%= link_to "Delete", request_path(:request => @request), :method => :delete,  :class => "btn btn-danger" %>
+<%= link_to "Delete", request_path(:request => @request), :method => :delete,  :class => "btn btn-danger"%>
+<%= link_to "My requests", request_path(:request => @request), :method => :delete,  :class => "btn btn-danger"%>
+</div>
+<br>
+<br>
 
 <%#= render "shared/card" %>

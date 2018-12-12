@@ -1,17 +1,23 @@
 .home-banner {
   background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), asset-url('image.jpg');
   background-size: cover;
-  height: 100vh;
-  color: #eee;
-  text-align: center;
+  min-height: 100vh;
   padding-top: 30vh;
   margin-top: -25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    color: #eee;
+    text-align: center;
+  }
 }
 
 .banner-request {
   background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), asset-url('new-image-cropped.jpg');
   background-size: cover;
-  height: 140vh;
+  min-height: 100vh;
   color: #eee;
   text-align: center;
   padding-top: 30vh;
