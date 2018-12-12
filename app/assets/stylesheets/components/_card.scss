@@ -9,6 +9,14 @@
   grid-gap: 10px;
   padding: 10px;
 }
+.card-container-booking-show{
+  display: grid;
+  grid-template-columns: repeat(2, 340px);
+
+  grid-gap: 10px;
+  padding-left: 280px;
+  margin-bottom: 25px;
+}
 .card_and_search {
   display: grid;
   grid-template-rows: 40px auto;
