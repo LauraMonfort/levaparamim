@@ -58,7 +58,7 @@
 .card-description-flex h2 {
   color: #C22F2F;
   font-size: 24px;
-  margin:0px;
+  margin:-5px;
 }
 .card-description-flex p {
   color: black;
@@ -67,6 +67,11 @@
   font-weight: lighter;
   margin: 0px;
   max-width: 340px;
+}
+.card-size-flex {
+  color: #C22F2F;
+  font-size: 15px;
+  margin:0px;
 }
 .card-comment-flex p {
   color: black;
@@ -86,7 +91,7 @@
 }
 
 .card-show {
-  display: flex;
+  // display: flex;
   justify-content: space-around;
   background: white;
   width: 340px;
@@ -101,4 +106,9 @@
 .card-show-container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.margin {
+
+  margin-left:70px ;
 }
