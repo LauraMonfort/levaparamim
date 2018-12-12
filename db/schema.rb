@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(version: 2018_12_11_171223) do
     t.boolean "booked", default: false
     t.float "latitude"
     t.float "longitude"
-    t.string "photo"
     t.string "origin_neighborhood"
     t.string "destination_neighborhood"
     t.index ["user_id"], name: "index_requests_on_user_id"
