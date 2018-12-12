@@ -91,7 +91,7 @@
 }
 
 .card-show {
-  display: flex;
+  // display: flex;
   justify-content: space-around;
   background: white;
   width: 340px;
@@ -106,4 +106,9 @@
 .card-show-container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.margin {
+
+  margin-left:70px ;
 }
