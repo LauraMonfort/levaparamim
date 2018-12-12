@@ -29,7 +29,12 @@
           </li>
           <li>
             <%= link_to "#" do %>
-            <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
+            <i class="fa fa-cog"></i> <%= t(".settings", default: "Settings") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to bookings_path"#" do %>
+            <i class="fas fa-list-ul"></i> <%= t(".settings", default: "My bookings") %>
             <% end %>
           </li>
           <li>
