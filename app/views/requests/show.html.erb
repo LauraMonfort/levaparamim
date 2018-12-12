@@ -8,10 +8,9 @@
   <p>Comment: <%=@request.comment%></p>
   <%= cl_image_tag @request.image, height: 300, width: 400, crop: :fill %>
 </div> -->
-<p><strong>Your request details</strong></p>
+<p style="padding-left: 280px"><strong>Your request details</strong></p>
 
 <div class="card-show-container">
-  <div class="card-container">
 
     <div class="front card-show">
       <div class="card-body-front">
@@ -19,11 +18,11 @@
           <%= cl_image_tag @request.user.avatar, class:"card-user avatar avatar-large" %>
        </div>
        <div class="card-description-flex">
-        <p><i class="fas fa-map-marker-alt"></i> <%= @request.origin[0..25] + '...' %></p>
+        <p><i class="fas fa-map-marker-alt"></i> <%= @request.origin_neighborhood%></p>
         <h2>R$ <%= @request.price %></h2>
       </div>
       <div class="card-description-flex">
-        <p><i class="fas fa-map-marker-alt"></i> <%= @request.destination[0..25] + '...' %></p>
+        <p><i class="fas fa-map-marker-alt"></i> <%= @request.destination_neighborhood%></p>
         <p><i class="far fa-calendar-alt"></i> <%= @request.delivery_date.strftime("%d/%m/%y")%></p>
       </div>
     </div>
@@ -51,11 +50,14 @@
           </div>
     </div>
   </div>
-
 </div>
-</div>
-
+<br>
+<div style="padding-left: 280px" class="btn-show">
 <%= link_to "Edit", edit_request_path(:request => @request), :method => :get,  :class => "btn btn-danger" %>
 <%= link_to "Delete", request_path(:request => @request), :method => :delete,  :class => "btn btn-danger"%>
+<%= link_to "My requests", request_path(:request => @request), :method => :delete,  :class => "btn btn-danger"%>
+</div>
+<br>
+<br>
 
 <%#= render "shared/card" %>
