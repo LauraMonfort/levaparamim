@@ -5,18 +5,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px;
-
-
-// for fixed the footer at the bottom of the page
-  //bottom: 0px;
-  //height: 30px;
-  //right: 0%;
-  //left: 0%;
-  //position: fixed!important;
-  //position: absolute;
-  //width: 100%;
-  //text-align: center;
-  //visibility: visible;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
 }
 .footer-social {
   color: gray;
