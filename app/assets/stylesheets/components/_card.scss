@@ -1,11 +1,11 @@
 .main-container {
   display: grid;
-  grid-template-columns: 710px auto;
+  grid-template-columns: auto 500px;
   margin-top: -5px;
 }
 .card-container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 10px;
   padding: 10px;
 }
@@ -62,11 +62,10 @@
 }
 .card-description-flex p {
   color: black;
-  font-size: 13px;
+  font-size: 14px;
   opacity: 0.7;
-  font-weight: lighter;
   margin: 0px;
-  max-width: 340px;
+  max-width: 360px;
 }
 .card-size-flex {
   color: #C22F2F;
@@ -81,6 +80,11 @@
   font-weight: lighter;
   margin: 0px;
   max-width: 340px;
+}
+
+.card-size-flex {
+font-size:16px;
+font-weight: bold;
 }
 .stars {
   display: flex;
@@ -106,4 +110,11 @@
 .margin {
 
   margin-left:70px ;
+}
+
+.card-show-bookings {
+  display: flex;
+  max-width: 720px;
+  margin: 35px auto;
+  background-color: white;
 }

@@ -6,7 +6,7 @@
   <% end %>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <%= link_to "What is Levitraz?", "#What is Levitraz?", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "What is Lev&Traz?", "#What is Lev&Traz?", class: "navbar-wagon-item navbar-wagon-link" %>
 
     <% if user_signed_in? %>
 
@@ -20,7 +20,7 @@
     <!-- Avatar with dropdown menu -->
     <div class="navbar-wagon-item">
       <div class="dropdown">
-        <%= cl_image_tag current_user.avatar, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <%= cl_image_tag current_user.avatar, class: "avatar-navbar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li>
             <%= link_to "#" do %>
@@ -34,7 +34,7 @@
           </li>
           <li>
             <%= link_to bookings_path"#" do %>
-            <i class="fas fa-list-ul"></i> <%= t(".settings", default: "My deliveries") %>
+            <i class="fas fa-list-ul"></i> <%= t(".bookings", default: "My Deliveries") %>
             <% end %>
           </li>
           <li>
@@ -69,8 +69,8 @@
             <% end %>
           </li>
           <li>
-            <%= link_to bookings_path do %>
-            <i class="fas fa-list-ul"></i> <%= t(".bookings", default: "My bookings") %>
+            <%= link_to bookings_path"#" do %>
+            <i class="fas fa-list-ul"></i> <%= t(".bookings", default: "My Deliveries") %>
             <% end %>
           </li>
           <li>
