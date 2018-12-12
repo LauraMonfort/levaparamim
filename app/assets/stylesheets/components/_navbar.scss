@@ -10,13 +10,27 @@
 }
 
 .fa-dolly{
+  display: flex;
+  align-items: center;
   color: #D23333;
-  font-size: 25px;
+  font-size: 17px;
+}
+
+.fa-dolly p{
+  font-family: "Nunito Sans", "sans-serif";
+  align-items: center;
+  margin: 0 0 0 7px;
 }
 
 /* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
+.navbar-wagon-brand {
+  &:hover {
+  text-decoration: none;
+  }
+
+  img {
+    height: 50px;
+  }
 }
 
 /* User Avatar */
