@@ -15,6 +15,7 @@
             <%= cl_image_tag request.user.avatar, class:"card-user avatar avatar-large" %>
           </div>
           <br>
+          <p class="card-size-flex"><strong><%= request.size%></strong></p>
           <div class="card-description-flex">
             <p><i class="fas fa-map-marker-alt"></i> <%= request.origin_neighborhood%></p>
             <h2>R$ <%= request.price %></h2>

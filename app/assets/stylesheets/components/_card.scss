@@ -58,7 +58,7 @@
 .card-description-flex h2 {
   color: #C22F2F;
   font-size: 24px;
-  margin:0px;
+  margin:-5px;
 }
 .card-description-flex p {
   color: black;
@@ -67,6 +67,11 @@
   font-weight: lighter;
   margin: 0px;
   max-width: 340px;
+}
+.card-size-flex {
+  color: #C22F2F;
+  font-size: 15px;
+  margin:0px;
 }
 .card-comment-flex p {
   color: black;
