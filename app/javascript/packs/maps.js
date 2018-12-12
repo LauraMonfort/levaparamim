@@ -40,21 +40,13 @@ if (markers.length === 0) {
 
 
 // const addressInput = document.getElementById('request_address');
-const addressInput = document.getElementsByClassName('search-bar');
-
-if (addressInput) {
+const addressInputs = document.querySelectorAll('.algolia-bar');
+addressInputs.forEach(input => {
   const places = require('places.js');
   const placesAutocomplete = places({
-    container: addressInput[1]
+    container: input
   });
-}
-
-if (addressInput) {
-  const places = require('places.js');
-  const placesAutocomplete = places({
-    container: addressInput[2]
-  });
-}
+});
 
 // if (mapElement) {
 //   markers.forEach((marker) => {
@@ -66,9 +58,8 @@ if (addressInput) {
 //   })
 // }
 
+const algoliaInputs = document.querySelectorAll('span.algolia-places')
+algoliaInputs.forEach(input => {
+  input.style.width  = "210px"
+});
 
-
-const algolia = document.getElementsByClassName('algolia-places')
-
-algolia[0].style.display  = "inline"
-algolia[1].style.display  = "inline"
