@@ -15,10 +15,10 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.status = "Pending"
     @booking.save!
-      if current_user
-        redirect_to requests_path
-      else
-        redirect_to user_session
-      end
+    #   if current_user
+    #     redirect_to requests_path
+    #   else
+    #     redirect_to user_session
+    #   end
     end
 end
