@@ -1,11 +1,10 @@
-YourAPIKey = 'b63adfa700d6e954f1994e8adee1b317'
-YourApplicationID = 'plWOSKD9GI9P'
-AlgoliaSearch.configuration = { application_id: 'YourApplicationID', api_key: 'YourAPIKey' }
+
+AlgoliaSearch.configuration = { application_id: 'YourApplicationIDAlgolia', api_key: 'YourAPIKeyAlgolia' }
 
 
 AlgoliaSearch.configuration = {
-  application_id: 'YourApplicationID',
-  api_key: 'YourAPIKey',
+  application_id: 'YourApplicationIDAlgolia',
+  api_key: 'YourAPIKeyAlgolia',
   connect_timeout: 2,
   receive_timeout: 30,
   send_timeout: 30,

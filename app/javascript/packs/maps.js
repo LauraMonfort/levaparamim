@@ -42,9 +42,11 @@ if (markers.length === 0) {
 // const addressInput = document.getElementById('request_address');
 const addressInputs = document.querySelectorAll('.algolia-bar');
 addressInputs.forEach(input => {
+
   const places = require('places.js');
   const placesAutocomplete = places({
-    container: input
+    container: input,
+    language: 'en'
   });
 });
 

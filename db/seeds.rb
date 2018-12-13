@@ -109,7 +109,7 @@ users_attributes = [
     first_name: 'Renato',
     last_name: 'Peixoto',
     remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/man2.jpg"
-  }
+  },
   {
     email: 'lauramonfort@live.fr',
     password: '123456',
@@ -117,7 +117,7 @@ users_attributes = [
     first_name: 'Laura',
     last_name: 'Monfort',
     remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544702052/Avatars/LauraMonfort.jpg"
-  }
+  },
   {
     email: 'btoledo1973@gmail.com',
     password: '123456',
@@ -125,7 +125,7 @@ users_attributes = [
     first_name: 'Bruno',
     last_name: 'Toledo',
     remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544702051/Avatars/BrunoToledo.jpg"
-  }
+  },
   {
     email: 'danielujikawa@gmail.com',
     password: '123456',
