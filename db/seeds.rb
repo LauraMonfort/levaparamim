@@ -110,6 +110,30 @@ users_attributes = [
     last_name: 'Peixoto',
     remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544544270/Avatars/man2.jpg"
   }
+  {
+    email: 'lauramonfort@live.fr',
+    password: '123456',
+    # username: 'renatopeixoto',
+    first_name: 'Laura',
+    last_name: 'Monfort',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544702052/Avatars/LauraMonfort.jpg"
+  }
+  {
+    email: 'btoledo1973@gmail.com',
+    password: '123456',
+    # username: 'renatopeixoto',
+    first_name: 'Bruno',
+    last_name: 'Toledo',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544702051/Avatars/BrunoToledo.jpg"
+  }
+  {
+    email: 'danielujikawa@gmail.com',
+    password: '123456',
+    # username: 'renatopeixoto',
+    first_name: 'Daniel',
+    last_name: 'Ujikawa',
+    remote_avatar_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544702051/Avatars/DanielUjikawa.jpg"
+  }
 ]
 
 User.create!(users_attributes)
