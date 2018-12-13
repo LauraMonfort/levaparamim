@@ -9,11 +9,14 @@
 }
 .alert-info {
   background: $green;
+  z-index: 2;
 }
 .alert-warning {
   background: $red;
+  z-index: 2;
 }
 
 .swal-text{
   text-align: center;
+
 }
