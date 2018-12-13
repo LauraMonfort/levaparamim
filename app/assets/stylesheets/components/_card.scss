@@ -124,8 +124,15 @@ font-weight: bold;
   background-color: white;
 }
 
+
 .card-show-description {
   display: flex;
   justify-content: space-evenly;
+}
+
+@media (max-width: 767.98px) {
+  .card-container {
+    margin-top: 115px;
+  }
 
 }
