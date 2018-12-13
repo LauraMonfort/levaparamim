@@ -34,7 +34,12 @@
           </li>
           <li>
             <%= link_to bookings_path"#" do %>
-            <i class="fas fa-list-ul"></i> <%= t(".bookings", default: "My Deliveries") %>
+            <i class="fas fa-list-ul"></i> <%= t(".my_deliveries", default: "My Deliveries") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to my_requests_path"#" do %>
+            <i class="fas fa-list-ul"></i> <%= t(".my_requests", default: "My Requests") %>
             <% end %>
           </li>
           <li>
@@ -70,7 +75,12 @@
           </li>
           <li>
             <%= link_to bookings_path"#" do %>
-            <i class="fas fa-list-ul"></i> <%= t(".bookings", default: "My Deliveries") %>
+            <i class="fas fa-list-ul"></i> <%= t(".my_deliveries", default: "My Deliveries") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to my_requests_path"#" do %>
+            <i class="fas fa-list-ul"></i> <%= t(".my_requests", default: "My Requests") %>
             <% end %>
           </li>
           <li>
