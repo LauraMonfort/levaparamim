@@ -316,7 +316,7 @@ requests_attributes = [
 },
 {
   delivery_date: '15/12/2018',
-  origin: 'Rua Aprazivel, 18 - Rio de Janeiro, Brazil',
+  origin: 'Rua Aprazível, 62, Santa Teresa - Rio de Janeiro, Brazil',
   destination: 'Avenida Paulista, 2300 - São Paulo, Brazil',
   size: 'Fits in a big car',
   price: '40',
