@@ -146,7 +146,7 @@ requests_attributes = [
   #Sao Paulo --> Rio
   {
     delivery_date: '15/12/2018',
-    origin: 'Rua Aimberê, 1512 - São Paulo, Brazil',
+    origin: 'Rua Aimberê, 1512, Perdizes, 01258-020 - São Paulo, Brazil',
     destination: 'Ladeira da Glória, 26 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
     price: "30",
@@ -158,7 +158,7 @@ requests_attributes = [
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Rua Rio Grande, 455 - São Paulo, Brazil',
+    origin: 'Rua Rio Grande, 455, Vila Mariana, 04018-001 - São Paulo, Brazil',
     destination: 'Rua Leblon, 11 - Rio de Janeiro, Brazil',
     size: 'Fits in a van',
     price: "50",
@@ -170,7 +170,7 @@ requests_attributes = [
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Avenida Paulista, 2300 - São Paulo, Brazil',
+    origin: 'Avenida Paulista, 2300, 01310-300, Bela Vista - São Paulo, Brazil',
     destination: 'Rua Aprazivel, 18 - Rio de Janeiro, Brazil',
     size: 'Fits in a big car',
     price: '40',
@@ -182,19 +182,19 @@ requests_attributes = [
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Rua Augusta, 2134 - São Paulo, Brazil',
+    origin: 'Rua Augusta, 2134, Cerqueira César, 01412-100 - São Paulo, Brazil',
     destination: 'Rua Conde de Bonfim, 615 - Rio de Janeiro, Brazil',
     size: 'Fits in a pocket',
     price: "20",
     comment: "Can anyone bring me the keys I forgot? I need then asap. Anyone willing to help for some easy cash???",
     user: User.where(first_name: 'Justin').first,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544711136/Objects/New_objects/roland-denes-768377-unsplash.jpg",
-    origin_neighborhood: "São Paulo - Vila Buarque",
+    origin_neighborhood: "São Paulo - Cerqueira César",
     destination_neighborhood: "Rio de Janeiro - Tijuca"
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Rua Henrique Schaumann, 678 - São Paulo, Brazil',
+    origin: 'Rua Henrique Schaumann, 678, Pinheiros, 05413-011 - São Paulo, Brazil',
     destination: 'Rua do Catete, 18 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
     price: '30',
@@ -206,7 +206,7 @@ requests_attributes = [
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Rua Purpurina, 230 - São Paulo, Brazil',
+    origin: 'Rua Purpurina, 230, 05435-030 - São Paulo, Brazil',
     destination: 'Rua Visconde de Piraja, 38 - Rio de Janeiro, Brazil',
     size: 'Fits in a car',
     price: "60",
@@ -218,19 +218,19 @@ requests_attributes = [
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Rua dos Pinheiros, 325 - São Paulo, Brazil',
+    origin: 'Rua dos Pinheiros, 325, Pinheiros, 05422-010 - São Paulo, Brazil',
     destination: 'Avenida Nossa Senhora de Copacabana, 56 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
     price: "20",
     comment: "Need this desperately! My son won't bath without this, and he won't stop crying. Anyone can relate and bring it to me, please? ",
     user: User.where(first_name: 'Camila').first,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544708636/Objects/New_objects/duck_bath2.jpg",
-    origin_neighborhood: "São Paulo - Alto de Pinheiros",
+    origin_neighborhood: "São Paulo - Pinheiros",
     destination_neighborhood: "Rio de Janeiro - Copacabana"
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Rua da Consolação, 2104 - São Paulo, Brazil',
+    origin: 'Rua da Consolação, 2104, Consolação, 01309-020 - São Paulo, Brazil',
     destination: 'Rua Barata Ribeiro, 449 - Rio de Janeiro, Brazil',
     size: 'Fits in a van',
     price: '70',
@@ -242,19 +242,19 @@ requests_attributes = [
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Avenida Jabaquara, 588 - São Paulo, Brazil',
+    origin: 'Avenida Jabaquara, 588, Mirandópolis, 04045-001 - São Paulo, Brazil',
     destination: 'Avenida Maracanã, 592 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
     price: "20",
     comment: "Forgot my lucky soccer ball in Sampa. Could you bring it to me before the game?",
     user: User.where(first_name: 'Claudio').first,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544708717/Objects/New_objects/andy-hall-376567-unsplash.jpg",
-    origin_neighborhood: "São Paulo - Jabaquara",
+    origin_neighborhood: "São Paulo - Mirandópolis",
     destination_neighborhood: "Rio de Janeiro - Maracanã"
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Avenida Pavão, 231 - São Paulo, Brazil',
+    origin: 'Avenida Pavão, 231, Moema, 04516-001 - São Paulo, Brazil',
     destination: 'Rua Jardim Botânico, 209 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
     price: "30",
@@ -266,7 +266,7 @@ requests_attributes = [
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Rua Tabapuã, 1412 - São Paulo, Brazil',
+    origin: 'Rua Tabapuã, 1412, Itaim Bibi, 04533-005 - São Paulo, Brazil',
     destination: 'Avenida Armando Lombardi, 431 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
     price: "20",
@@ -278,14 +278,14 @@ requests_attributes = [
   },
   {
     delivery_date: '15/12/2018',
-    origin: 'Rua Oscar Freire, 454 - São Paulo, Brazil',
+    origin: 'Rua Oscar Freire, 454, Jardim Paulista, 04002-010 - São Paulo, Brazil',
     destination: 'Rua Marquês de Abrantes, 35 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
     price: "20",
     comment: "Borrowed these from my sister without telling her and forgot it in Sampa. Can anyone bring it to me before she kills me??",
     user: User.where(first_name: 'Milene').first,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544708693/Objects/New_objects/annie-theby-416948-unsplash.jpg",
-    origin_neighborhood: "São Paulo - Jardins",
+    origin_neighborhood: "São Paulo - Jardim Paulista",
     destination_neighborhood: "Rio de Janeiro - Flamengo"
   },
 
@@ -328,7 +328,7 @@ requests_attributes = [
 },
 {
   delivery_date: '15/12/2018',
-  origin: 'Rua do Catete, 18 - Rio de Janeiro, Brazil',
+  origin: 'Rua do Catete, 18, Catete - Rio de Janeiro, Brazil',
   destination: 'Rua Henrique Schaumann, 678 - São Paulo, Brazil',
   size: 'Fits in a bag',
   price: '30',
@@ -424,7 +424,7 @@ requests_attributes = [
 },
 {
   delivery_date: '15/12/2018',
-  origin: 'Rua Jardim Botânico, 209 - Rio de Janeiro, Brazil',
+  origin: 'Rua Jardim Botânico, 209, 22460-000 - Rio de Janeiro, Brazil',
   destination: 'Avenida Pavão, 231 - São Paulo, Brazil',
   size: 'Fits in a bag',
   price: "30",
@@ -436,7 +436,7 @@ requests_attributes = [
 },
 {
   delivery_date: '15/12/2018',
-  origin: 'Avenida Armando Lombardi, 431 - Rio de Janeiro, Brazil',
+  origin: 'Avenida Armando Lombardi, 431, 22640-020 - Rio de Janeiro, Brazil',
   destination: 'Rua Tabapuã, 1412 - São Paulo, Brazil',
   size: 'Fits in a bag',
   price: "20",
