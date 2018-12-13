@@ -26,12 +26,12 @@
 
   <div>
   <% f.label :origin %>
-  <%= f.input :origin, label: false, placeholder: "From" %>
+  <%= f.input :origin, input_html: { class: "algolia-bar" }, label: false, placeholder: "From" %>
   </div>
 
   <div>
     <% f.label :destination %>
-    <%= f.input :destination, label: false, placeholder: "To" %>
+    <%= f.input :destination, input_html: { class: "algolia-bar" }, label: false, placeholder: "To" %>
   </div>
 
   <div>
