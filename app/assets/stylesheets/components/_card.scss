@@ -23,12 +23,12 @@
 }
 .card-body-front {
   padding: 7px;
+  margin: 10px;
 }
 .card-body-back {
   width: 100%;
   padding: 20px;
-  padding-top: 0px;
-  margin: 15px;
+  padding-top: 10px;
   position: relative;
 }
 
@@ -44,6 +44,7 @@
   background-size: cover !important;
   background-position: center;
   position: relative;
+  margin-bottom: 10px;
 }
 .card-user {
   position: absolute;
