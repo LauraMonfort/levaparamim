@@ -14,6 +14,16 @@
   }
 }
 
+.banner-edit{
+  background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), url();
+  background-size: cover;
+  min-height: 100vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 3vh;
+  margin-top: -25px;
+}
+
 .banner-request {
   background-image: -webkit-linear-gradient(top right, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), url('https://res.cloudinary.com/danielujikawa/image/upload/v1544700984/Backgrounds/new-request-background-min.jpg');
   background-size: cover;
