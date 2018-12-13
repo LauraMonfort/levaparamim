@@ -60,8 +60,19 @@ addressInputs.forEach(input => {
 //   })
 // }
 
-const algoliaInputs = document.querySelectorAll('span.algolia-places')
-algoliaInputs.forEach(input => {
-  input.style.width  = "210px"
+let pop = window.location.href
+
+if (pop.slice(-1) === "/") {
+ const algoliaInputs = document.querySelectorAll('span.algolia-places')
+ algoliaInputs.forEach(input => {
+ input.style.width  = "210px"
 });
+} else {
+ console.log(`hey!`);
+}
+
+// const algoliaInputs = document.querySelectorAll('span.algolia-places')
+// algoliaInputs.forEach(input => {
+//   input.style.width  = "210px"
+// });
 
