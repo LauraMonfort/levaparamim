@@ -1,6 +1,8 @@
-<div >
+
+<div class = "search-input">
   <%= form_tag requests_path, method: :get, class: 'form-inline' do %>
   <!--       datepicker -begin ---- -->
+
   <%= text_field :query_delivery_date, "", :required => false,
     class: "form-control search-bar",
     placeholder: "Delivery date",
@@ -8,9 +10,13 @@
     flatpickr_format: "Y-m-d",
     flatpickr_min_date: Time.zone.now }
   %>
-  <!--       datepicker - end ---- -->
+
   <%= text_field_tag :query_origin, params[:query_origin], :required => true, class: "form-control search-bar algolia-bar", placeholder: "From"%>
+
+  <!--       datepicker - end ---- -->
   <%= text_field_tag :query_destination, params[:query_destination], :required => true, class: "form-control search-bar algolia-bar", placeholder: "To"%>
+
   <%= submit_tag "Find", class: "btn btn-primary search-bar-btn" %>
   <% end %>
 </div>
+
