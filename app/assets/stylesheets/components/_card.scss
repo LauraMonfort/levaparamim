@@ -83,7 +83,6 @@
   margin: 0px;
   max-width: 340px;
 }
-
 .card-size-flex {
 font-size:16px;
 font-weight: bold;
@@ -95,44 +94,35 @@ font-weight: bold;
   color: orange;
   position: absolute;
 }
-
 .card-show {
   background: white;
   width: 360px;
   height:360px;
   border-color: #f3f3f3;
 }
-
 .card-show-main-container {
   display: flex;
   justify-content: space-around;
 }
-
 .card-show-bookings-container {
   display: flex;
   justify-content: center;
 }
-
 .card-show-container {
   display: flex;
   justify-content: space-around;
   width: 70%;
 }
-
-
 .margin {
   margin-left:70px ;
 }
-
 .card-show-bookings {
   display: flex;
   max-width: 720px;
-  height: 330px;
+  // height: 330px;
   margin: 35px auto;
   background-color: white;
 }
-
-
 .card-show-description {
   display: flex;
   justify-content: space-evenly;
@@ -141,10 +131,15 @@ font-weight: bold;
 @media (max-width: 767.98px) {
   .card-container {
     margin-top: 115px;
+
   }
-
+  .search-input{
+    margin: auto;
+  }
+  .footer{
+    width: 100vh;
+  }
 }
-
 .card-btn-position-div {
   position: relative;
 }

@@ -1,11 +1,11 @@
 <div class="container">
   <h3 style="text-align: center; margin-bottom: 30px; margin-top: 15px;"><strong>Your current requests</strong></h3>
 
-    <div class="card-show-bookings-container">
-     <div class="">
-      <% if @requests.any? %>
-       <% @requests.each do |request|  %>
-        <div class="card-show-bookings">
+  <div class="card-show-bookings-container">
+   <div class="card-btn-position-div">
+    <% if @requests.any? %>
+     <% @requests.each do |request|  %>
+      <div class="card-show-bookings">
 
           <div class="card-body-front">
             <div class="card-picture" style="background: url(<%= request.image %>);">
