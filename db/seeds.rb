@@ -162,23 +162,11 @@ requests_attributes = [
     destination: 'Rua Leblon, 11 - Rio de Janeiro, Brazil',
     size: 'Fits in a van',
     price: "50",
-    comment: "Coming to São Paulo tonight? Could you bring me this bicycle?",
+    comment: "Coming to Rio from Sampa tonight? Could you bring me this bicycle?",
     user: User.where(first_name: 'Flavia').first,
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544708637/Objects/New_objects/mac-blades-422852-unsplash.jpg",
     origin_neighborhood: "São Paulo - Vila Mariana",
     destination_neighborhood: "Rio de Janeiro - Leblon"
-  },
-  {
-    delivery_date: '15/12/2018',
-    origin: 'Av. Pacaembu, 746 - São Paulo, Brazil',
-    destination: 'Rua São Clemente, 32 - Rio de Janeiro, Brazil',
-    size: 'Fits in a bag',
-    price: "10",
-    comment: "Miss my favorite local snack. Can anyone bring it to me?",
-    user: User.where(first_name: 'Ricardo').first,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544708635/Objects/New_objects/biscoito-globo_reproducao-facebook_cortada.jpg",
-    origin_neighborhood: "São Paulo - Pacaembu",
-    destination_neighborhood: "Rio de Janeiro - Botafogo"
   },
   {
     delivery_date: '15/12/2018',
@@ -191,6 +179,18 @@ requests_attributes = [
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544710894/Objects/New_objects/matthijs-smit-574921-unsplash.jpg",
     origin_neighborhood: "São Paulo - Bela Vista",
     destination_neighborhood: "Rio de Janeiro - Santa Teresa"
+  },
+  {
+    delivery_date: '15/12/2018',
+    origin: 'Rua Augusta, 2134 - São Paulo, Brazil',
+    destination: 'Rua Conde de Bonfim, 615 - Rio de Janeiro, Brazil',
+    size: 'Fits in a pocket',
+    price: "20",
+    comment: "Can anyone bring me the keys I forgot? I need then asap. Anyone willing to help for some easy cash???",
+    user: User.where(first_name: 'Justin').first,
+    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544711136/Objects/New_objects/roland-denes-768377-unsplash.jpg",
+    origin_neighborhood: "São Paulo - Vila Buarque",
+    destination_neighborhood: "Rio de Janeiro - Tijuca"
   },
   {
     delivery_date: '15/12/2018',
@@ -227,18 +227,6 @@ requests_attributes = [
     remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544708636/Objects/New_objects/duck_bath2.jpg",
     origin_neighborhood: "São Paulo - Alto de Pinheiros",
     destination_neighborhood: "Rio de Janeiro - Copacabana"
-  },
-  {
-    delivery_date: '15/12/2018',
-    origin: 'Rua Augusta, 2134 - São Paulo, Brazil',
-    destination: 'Rua Conde de Bonfim, 615 - Rio de Janeiro, Brazil',
-    size: 'Fits in a pocket',
-    price: "20",
-    comment: "Can anyone bring me the keys I forgot? I need then asap. Anyone willing to help for some easy cash???",
-    user: User.where(first_name: 'Justin').first,
-    remote_image_url: "https://res.cloudinary.com/danielujikawa/image/upload/v1544711136/Objects/New_objects/roland-denes-768377-unsplash.jpg",
-    origin_neighborhood: "São Paulo - Vila Buarque",
-    destination_neighborhood: "Rio de Janeiro - Tijuca"
   },
   {
     delivery_date: '15/12/2018',
