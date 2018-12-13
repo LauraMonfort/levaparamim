@@ -1,0 +1,28 @@
+.btn-back{
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #233140;
+  background-color: btnback;
+  opacity: 0.5;
+}
+
+.btn-show {
+  display: flex;
+  justify-content: center;
+
+}
+
+.btn-info {
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px black;
+  font-size: 17px;
+  vertical-align: baseline;
+  margin: 0 10px;
+  }
+
+.btn-danger{
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px black;
+  font-size: 17px;
+  vertical-align: baseline;
+  margin: 0 10px;
+}
