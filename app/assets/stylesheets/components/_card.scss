@@ -118,3 +118,9 @@ font-weight: bold;
   margin: 35px auto;
   background-color: white;
 }
+
+@media (max-width: 767.98px) {
+  .card-container {
+    margin-top: 115px;
+  }
+}
