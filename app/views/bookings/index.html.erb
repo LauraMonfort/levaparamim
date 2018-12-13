@@ -1,29 +1,17 @@
-
-
-  <h3 style="text-align: center; margin-bottom: 30px; margin-top: 15px;"><strong>My Deliveries</strong></h3>
+  <h3 style="text-align: center; margin-bottom: 30px;margin-top: 15px;"><strong>My Deliveries</strong></h3>
 
   <div class="card-show-bookings-container">
    <div class="">
     <% if @bookings.any? %>
      <% @bookings.each do |booking|  %>
       <div class="card-show-bookings">
-<!--       <div class="front card-show"> <--></-->
+
         <div class="card-body-front">
           <div class="card-picture" style="background: url(<%= booking.request.image %>);">
             <%= cl_image_tag booking.request.user.avatar, class:"card-user avatar avatar-large" %>
           </div>
-          <!-- <div class="card-description-flex">
-            <p><i class="fas fa-map-marker-alt"></i> <%= booking.request.origin_neighborhood %></p>
-            <h2>R$ <%= booking.request.price %></h2>
-          </div>
-          <div class="card-description-flex">
-            <p><i class="fas fa-map-marker-alt"></i> <%= booking.request.destination_neighborhood %></p>
-            <p><i class="far fa-calendar-alt"></i> <%= booking.request.delivery_date.strftime("%d/%m/%y")%></p>
-          </div> -->
         </div>
-<!--       </div>
 
-      <div class="back card-show"> -->
         <div class="card-body-back">
           <div class="card-description-flex">
             <h5><%= booking.request.user.first_name %> <%= booking.request.user.last_name %></h5>
@@ -42,7 +30,7 @@
             <p><strong>Comment: </strong><%= booking.request.comment %></p>
           </div>
         </div>
-<!--       </div> -->
+
       </div>
     <% end %>
    <% else %>
@@ -50,7 +38,6 @@
   <% end %>
 </div>
 </div>
-
 
 <!-- <div class = "container">
   <div class="tabs">

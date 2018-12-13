@@ -25,6 +25,7 @@
   padding: 7px;
 }
 .card-body-back {
+  width: 100%;
   padding: 20px;
   padding-top: 0px;
   margin: 15px;
@@ -125,6 +126,7 @@ font-weight: bold;
 .card-show-bookings {
   display: flex;
   max-width: 720px;
+  height: 330px;
   margin: 35px auto;
   background-color: white;
 }
@@ -140,4 +142,8 @@ font-weight: bold;
     margin-top: 115px;
   }
 
+}
+
+.card-btn-position-div {
+  position: relative;
 }

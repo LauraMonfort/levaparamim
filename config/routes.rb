@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   #add in OffersController a before_action: authenticate_user! only: [:new, :edit, :create, :update]
   resources :requests
 
+  get '/my_requests', to: 'requests#index_user'
+
   #add in BookingsController a before_action: authenticate_user!
   resources :requests, only: [] do
     resources :bookings, only: [:create, :destroy]

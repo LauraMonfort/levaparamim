@@ -5,7 +5,7 @@ class RequestsController < ApplicationController
       @requests = Request.all
       @requests = @requests.search_by_origin(params[:query_origin]) if params[:query_origin].present?
       @requests = @requests.search_by_destination(params[:query_destination]) if params[:query_destination].present?
-      @requests = @requests.where(delivery_date: params[:query_delivery_date]) if params[:query_delivery_date].present?
+      @requests = @requests.where(delivery_date: params[:query_delivery_date]) if params[:query_delivery_date] != [""]
     else
       @requests = Request.all
 
@@ -19,6 +19,10 @@ class RequestsController < ApplicationController
         infoWindow: { content: render_to_string(partial: "/requests/map_window", locals: { request: request }) }
       }
     end
+  end
+
+  def index_user
+    @requests = Request.where(user: current_user)
   end
 
   def home
@@ -57,7 +61,7 @@ class RequestsController < ApplicationController
   def destroy
     @request = Request.find(params[:id])
     @request.destroy
-    redirect_to root_path
+    redirect_to my_requests_path
   end
 
   private
