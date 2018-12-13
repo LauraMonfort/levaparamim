@@ -1,44 +1,47 @@
-<h3 style="text-align: center; margin-bottom: 30px; margin-top: 15px;"><strong>Your current requests</strong></h3>
+<div class="container">
+  <h3 style="text-align: center; margin-bottom: 30px; margin-top: 15px;"><strong>Your current requests</strong></h3>
 
-  <div class="card-show-bookings-container">
-   <div class="">
-    <% if @requests.any? %>
-     <% @requests.each do |request|  %>
-      <div class="card-show-bookings">
+    <div class="card-show-bookings-container">
+     <div class="">
+      <% if @requests.any? %>
+       <% @requests.each do |request|  %>
+        <div class="card-show-bookings">
 
-        <div class="card-body-front">
-          <div class="card-picture" style="background: url(<%= request.image %>);">
-            <%= cl_image_tag request.user.avatar, class:"card-user avatar avatar-large" %>
+          <div class="card-body-front">
+            <div class="card-picture" style="background: url(<%= request.image %>);">
+              <%= cl_image_tag request.user.avatar, class:"card-user avatar avatar-large" %>
+            </div>
           </div>
+
+          <div class="card-body-back">
+            <div class="card-description-flex">
+              <h5><%= request.user.first_name %> <%= request.user.last_name %></h5>
+              <h2>R$ <%= request.price %></h2>
+            </div>
+            <div class="card-description-flex">
+              <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%>
+            </div>
+            <div class="card-description-flex">
+              <p><strong>Origin: </strong></i> <%= request.origin %></p>
+            </div>
+            <div class="card-description-flex">
+              <p><strong>Destination: </strong></i> <%= request.destination %></p>
+            </div>
+            <div class="card-description-flex">
+              <p><strong>Comment: </strong><%= request.comment %></p>
+            </div>
+            <div class="btn-show" id="btn-show-index-user">
+              <%= link_to "Edit", edit_request_path(:id => request.id), :method => :get,  :class => "btn btn-info" %>
+              <%= link_to "Delete", request_path(:id => request.id), :method => :delete,  :class => "btn btn-danger"%>
+            </div>
+          </div>
+
         </div>
-
-        <div class="card-body-back">
-          <div class="card-description-flex">
-            <h5><%= request.user.first_name %> <%= request.user.last_name %></h5>
-            <h2>R$ <%= request.price %></h2>
-          </div>
-          <div class="card-description-flex">
-            <p><i class="far fa-calendar-alt"></i> <%= request.delivery_date.strftime("%d/%m/%y")%>
-          </div>
-          <div class="card-description-flex">
-            <p><strong>Origin: </strong></i> <%= request.origin %></p>
-          </div>
-          <div class="card-description-flex">
-            <p><strong>Destination: </strong></i> <%= request.destination %></p>
-          </div>
-          <div class="card-description-flex">
-            <p><strong>Comment: </strong><%= request.comment %></p>
-          </div>
-          <div class="btn-show" id="btn-show-index-user">
-            <%= link_to "Edit", edit_request_path(:id => request.id), :method => :get,  :class => "btn btn-info" %>
-            <%= link_to "Delete", request_path(:id => request.id), :method => :delete,  :class => "btn btn-danger"%>
-          </div>
-        </div>
-
-      </div>
+      <% end %>
+     <% else %>
+    <p>No request found.</p>
     <% end %>
-   <% else %>
-  <p>No request found.</p>
-  <% end %>
+  </div>
+  </div>
 </div>
-</div>
+
