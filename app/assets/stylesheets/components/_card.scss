@@ -106,14 +106,19 @@ font-weight: bold;
   justify-content: space-around;
 }
 
-.card-show-container {
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
+.card-show-bookings-container {
+  display: flex;
+  justify-content: center;
 }
 
-.margin {
+.card-show-container {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
 
+
+.margin {
   margin-left:70px ;
 }
 
