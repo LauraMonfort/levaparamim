@@ -13,3 +13,7 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.css";
 flatpickr("#query_delivery_date_");
 flatpickr(".flatpickr-field");
+
+document.querySelector('#request_size').addEventListener('click', event => {
+  event.currentTarget.style.color = '#000';
+})
