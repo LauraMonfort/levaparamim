@@ -145,7 +145,7 @@ puts 'Creating requests...'
 requests_attributes = [
   #Sao Paulo --> Rio
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Rua Aimberê, 1512 - São Paulo, Brazil',
     destination: 'Ladeira da Glória, 26 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
@@ -157,7 +157,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Glória"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Rua Rio Grande, 455 - São Paulo, Brazil',
     destination: 'Rua Leblon, 11 - Rio de Janeiro, Brazil',
     size: 'Fits in a van',
@@ -169,7 +169,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Leblon"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Avenida Paulista, 2300 - São Paulo, Brazil',
     destination: 'Rua Aprazivel, 18 - Rio de Janeiro, Brazil',
     size: 'Fits in a big car',
@@ -181,7 +181,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Santa Teresa"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Rua Augusta, 2134 - São Paulo, Brazil',
     destination: 'Rua Conde de Bonfim, 615 - Rio de Janeiro, Brazil',
     size: 'Fits in a pocket',
@@ -193,7 +193,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Tijuca"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Rua Henrique Schaumann, 678 - São Paulo, Brazil',
     destination: 'Rua do Catete, 18 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
@@ -205,7 +205,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Catete"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Rua Purpurina, 230 - São Paulo, Brazil',
     destination: 'Rua Visconde de Piraja, 38 - Rio de Janeiro, Brazil',
     size: 'Fits in a car',
@@ -217,7 +217,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Ipanema"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Rua dos Pinheiros, 325 - São Paulo, Brazil',
     destination: 'Avenida Nossa Senhora de Copacabana, 56 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
@@ -229,7 +229,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Copacabana"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Rua da Consolação, 2104 - São Paulo, Brazil',
     destination: 'Rua Barata Ribeiro, 449 - Rio de Janeiro, Brazil',
     size: 'Fits in a van',
@@ -241,7 +241,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Copacabana"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Avenida Jabaquara, 588 - São Paulo, Brazil',
     destination: 'Avenida Maracanã, 592 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
@@ -253,7 +253,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Maracanã"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Avenida Pavão, 231 - São Paulo, Brazil',
     destination: 'Rua Jardim Botânico, 209 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
@@ -265,7 +265,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Jardim Botânico"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Rua Tabapuã, 1412 - São Paulo, Brazil',
     destination: 'Avenida Armando Lombardi, 431 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
@@ -277,7 +277,7 @@ requests_attributes = [
     destination_neighborhood: "Rio de Janeiro - Barra da Tijuca"
   },
   {
-    delivery_date: '15/12/2018',
+    delivery_date: '17/12/2018',
     origin: 'Rua Oscar Freire, 454, Jardim Paulista - São Paulo, Brazil',
     destination: 'Rua Marquês de Abrantes, 35 - Rio de Janeiro, Brazil',
     size: 'Fits in a bag',
@@ -291,7 +291,7 @@ requests_attributes = [
 
 # Rio --> Sao Paulo
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Rua Marquês de Abrantes, 35 - Rio de Janeiro, Brazil',
   destination: 'Rua Oscar Freire, 454 - São Paulo, Brazil',
   size: 'Fits in a bag',
@@ -303,7 +303,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Jardins"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Rua São Clemente, 32 - Rio de Janeiro, Brazil',
   destination: 'Av. Pacaembu, 746 - São Paulo, Brazil',
   size: 'Fits in a bag',
@@ -315,7 +315,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Pacaembu"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Rua Aprazível, 62, Santa Teresa - Rio de Janeiro, Brazil',
   destination: 'Avenida Paulista, 2300 - São Paulo, Brazil',
   size: 'Fits in a big car',
@@ -327,7 +327,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Bela Vista",
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Rua do Catete, 18, Catete - Rio de Janeiro, Brazil',
   destination: 'Rua Henrique Schaumann, 678 - São Paulo, Brazil',
   size: 'Fits in a bag',
@@ -339,7 +339,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Pinheiros"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Rua Visconde de Piraja, 38 - Rio de Janeiro, Brazil',
   destination: 'Rua Purpurina, 230 - São Paulo, Brazil',
   size: 'Fits in a car',
@@ -351,7 +351,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Vila Madalena"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Avenida Nossa Senhora de Copacabana, 56 - Rio de Janeiro, Brazil',
   destination: 'Rua dos Pinheiros, 325 - São Paulo, Brazil',
   size: 'Fits in a bag',
@@ -363,7 +363,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Alto de Pinheiros"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Rua Conde de Bonfim, 615 - Rio de Janeiro, Brazil',
   destination: 'Rua Augusta, 2134 - São Paulo, Brazil',
   size: 'Fits in a pocket',
@@ -375,7 +375,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Vila Buarque"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Rua Barata Ribeiro, 449 - Rio de Janeiro, Brazil',
   destination: 'Rua da Consolação, 2104 - São Paulo, Brazil',
   size: 'Fits in a van',
@@ -387,7 +387,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Consolação"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Ladeira da Glória, 26 - Rio de Janeiro, Brazil',
   destination: 'Rua Aimberê, 1512 - São Paulo, Brazil',
   size: 'Fits in a bag',
@@ -399,7 +399,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Perdizes"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Rua Leblon, 11 - Rio de Janeiro, Brazil',
   destination: 'Rua Rio Grande, 455 - São Paulo, Brazil',
   size: 'Fits in a van',
@@ -411,7 +411,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Vila Mariana"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Avenida Maracanã, 592 - Rio de Janeiro, Brazil',
   destination: 'Avenida Jabaquara, 588 - São Paulo, Brazil',
   size: 'Fits in a bag',
@@ -423,7 +423,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Jabaquara"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Rua Jardim Botânico, 209, 22460-000 - Rio de Janeiro, Brazil',
   destination: 'Avenida Pavão, 231 - São Paulo, Brazil',
   size: 'Fits in a bag',
@@ -435,7 +435,7 @@ requests_attributes = [
   destination_neighborhood: "São Paulo - Moema"
 },
 {
-  delivery_date: '15/12/2018',
+  delivery_date: '17/12/2018',
   origin: 'Avenida Armando Lombardi, 431, 22640-020 - Rio de Janeiro, Brazil',
   destination: 'Rua Tabapuã, 1412 - São Paulo, Brazil',
   size: 'Fits in a bag',
