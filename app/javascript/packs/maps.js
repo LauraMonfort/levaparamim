@@ -62,7 +62,8 @@ addressInputs.forEach(input => {
 
 let pop = window.location.href
 
-if (pop.slice(-1) === "w") {
+// if (pop.slice(-1) === "w") {
+if (pop.includes("new")) {
 
 
  console.log(`hey!`);
