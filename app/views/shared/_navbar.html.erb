@@ -84,12 +84,22 @@
             <% end %>
           </li>
           <li>
+            <%= link_to root_path"#" do %>
+            <i class="fas fa-list-ul"></i> <%= t(".deliver_something", default: "Deliver something") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to new_request_path"#" do %>
+            <i class="fas fa-list-ul"></i> <%= t(".create_your_request!", default: "Create your request!") %>
+            <% end %>
+          </li>
+          <li>
             <%= link_to destroy_user_session_path, method: :delete do %>
             <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
             <% end %>
           </li>
           <% else %>
-            <li><%= link_to "What is Levitraz?", "#What is Levitraz?", class: "navbar-wagon-item navbar-wagon-link" %></li>
+            <li><%= link_to "What is Lev&traz?", "#What is Lev&traz?", class: "navbar-wagon-item navbar-wagon-link" %></li>
             <li><%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
         <% end %>
       </ul>
