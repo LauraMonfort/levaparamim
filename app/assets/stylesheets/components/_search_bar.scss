@@ -1,12 +1,12 @@
 .search-bar {
-  height: 10px;
+
   font-size: 15px;
   margin: 0 auto;
   height: 30px;
 }
 
 .search-bar-btn {
-  height: 10px;
+
   font-size: 15px;
   margin: 0 auto;
   height: 30px;
@@ -25,9 +25,9 @@
   width: 210px;
 }
 
-.algolia-places {
-  display: unset !important;
-}
+// .algolia-places {
+//   display: unset !important;
+// }
 
 @media (max-width: 767.98px) {
   .search-input {
