@@ -35,19 +35,18 @@
 }
 
 
-#title {
-  font-size: 60px; //for responsivness do not put the size higher
+#title  h1 {
+  color: white;
+  font-size: 56px; //for responsivness do not put the size higher
   text-shadow: 1px 1px 10px black;
-  font-weight: 450;
+  font-weight: 700;
 }
 
 #subtitle {
-  letter-spacing: 7px;
   text-shadow: 1px 1px 5px black;
   font-size: 35px;
   font-weight: lighter;
-  color: rgba(255, 255, 255, 0.7);
-
+  color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 767.98px) {

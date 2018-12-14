@@ -1,19 +1,18 @@
 <div class="navbar-wagon navbar-fixed-top">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-  <i class="fas fa-dolly"><p> Lev&Traz</p></i>
+  <i class="fas fa-dolly"><p>Lev&Traz</p></i>
   <!-- <img src="app/assets/images/logo.png" alt=""> -->
   <% end %>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <%= link_to "What is Lev&Traz?", "#What is Lev&Traz?", class: "navbar-wagon-item navbar-wagon-link" %>
-
+    <a class="navbar-wagon-item navbar-wagon-link", href="http://www.levitraz.com/#What is Lev&Traz?">Whats is Lev&Traz?</a>
     <% if user_signed_in? %>
 
     <!-- Links when logged in -->
-    <%#= link_to "What is Levitraz?", "#What is Levitraz?", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%#= link_to "What is Lev&Traz?", "#What is Lev&Traz?", class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Deliver something", root_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Create your request!", new_request_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Create your request", new_request_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <%#= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
     <div><p class="navbar-welcome-name"><%= current_user.first_name %></p></div>
 
@@ -63,44 +62,44 @@
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
 
         <% if user_signed_in? %>
-          <li>
-            <%= link_to "#" do %>
-            <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to "#" do %>
-            <i class="fa fa-cog"></i> <%= t(".settings", default: "Settings") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to bookings_path"#" do %>
-            <i class="fas fa-list-ul"></i> <%= t(".my_deliveries", default: "My Deliveries") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to my_requests_path"#" do %>
-            <i class="fas fa-list-ul"></i> <%= t(".my_requests", default: "My Requests") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to root_path"#" do %>
-            <i class="fas fa-list-ul"></i> <%= t(".deliver_something", default: "Deliver something") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to new_request_path"#" do %>
-            <i class="fas fa-list-ul"></i> <%= t(".create_your_request!", default: "Create your request!") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to destroy_user_session_path, method: :delete do %>
-            <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
-            <% end %>
-          </li>
-          <% else %>
-            <li><%= link_to "What is Lev&traz?", "#What is Lev&traz?", class: "navbar-wagon-item navbar-wagon-link" %></li>
-            <li><%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li>
+          <%= link_to "#" do %>
+          <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "#" do %>
+          <i class="fa fa-cog"></i> <%= t(".settings", default: "Settings") %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to bookings_path"#" do %>
+          <i class="fas fa-list-ul"></i> <%= t(".my_deliveries", default: "My Deliveries") %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to my_requests_path"#" do %>
+          <i class="fas fa-list-ul"></i> <%= t(".my_requests", default: "My Requests") %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to root_path"#" do %>
+          <i class="fas fa-list-ul"></i> <%= t(".deliver_something", default: "Deliver something") %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to new_request_path"#" do %>
+          <i class="fas fa-list-ul"></i> <%= t(".create_your_request", default: "Create your request") %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+          <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+          <% end %>
+        </li>
+        <% else %>
+        <li><a href="http://www.levitraz.com/#What is Lev&Traz?">Whats is Lev&Traz?</a></li>
+        <li><%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
         <% end %>
       </ul>
     </div>
