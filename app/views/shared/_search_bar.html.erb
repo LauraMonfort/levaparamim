@@ -5,16 +5,16 @@
 
   <%= text_field :query_delivery_date, "", :required => false,
     class: "form-control search-bar",
-    placeholder: "Delivery date",
+    placeholder: "Day of travel",
     data: {
     flatpickr_format: "Y-m-d",
     flatpickr_min_date: Time.zone.now }
   %>
 
-  <%= text_field_tag :query_origin, params[:query_origin], :required => true, class: "form-control search-bar algolia-bar", placeholder: "From"%>
+  <%= text_field_tag :query_origin, params[:query_origin], :required => true, class: "form-control search-bar algolia-bar", placeholder: "Origin"%>
 
   <!--       datepicker - end ---- -->
-  <%= text_field_tag :query_destination, params[:query_destination], :required => true, class: "form-control search-bar algolia-bar", placeholder: "To"%>
+  <%= text_field_tag :query_destination, params[:query_destination], :required => true, class: "form-control search-bar algolia-bar", placeholder: "Destination"%>
 
   <%= submit_tag "Find", class: "btn btn-primary search-bar-btn" %>
   <% end %>

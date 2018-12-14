@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
-  #add in OffersController a before_action: authenticate_user! only: [:new, :edit, :create, :update]
+  #add in RequestController a before_action: authenticate_user! only: [:new, :edit, :create, :update]
   resources :requests
 
   get '/my_requests', to: 'requests#index_user'
